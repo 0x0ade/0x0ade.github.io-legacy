@@ -32,33 +32,18 @@
       <section>
         <div id="title">
           <h1>AngelDE98&#39;s Blog</h1>
-          <p>I need a better tagline.</p>
+          <p>I still need a better tagline.</p>
           <hr>
-          <!--
-          <span class="credits left">Project maintained by <a href="https://github.com/AngelDE98">AngelDE98</a></span>
-          -->
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <pre><code>public static void main(String[] args) {  
-    Blog blog = new Blog(AngelDE98);  
-    AngelDE98.setBlog(blog);  
-    while (blog.isUnderConstruction()) {  
-        System.out.println("Nothing to see here, move along. And don't even ask me...");  
-        try {  
-            Thread.sleep(Long.MAX_VALUE); //TODO Replace as Thread.sleep is a bad practice...  
-            //Google says:  
-            //(((((2^63-1) - (1 / 1000)) / 60) / 60) / 24) / 365 = 292471208678  
-            //... not bad.
-        } catch (InterruptedException e) {  
-            System.err.println("I've told you to NOT ask me. Well done!");  
-            e.printStackTrace();  
-        }  
-    }  
-}  
+        <pre><code>
+public static void main(String[] args) {
+    System.out.println("Nothing to see here.");
+    throw new RuntimeException();
+}
 </code></pre>
 
-<p><strong>Nothing to see here, move along. And don't even ask me...</strong>  </p>
+<p><strong>Nothing to see here.</strong>  </p>
       </section>
 
     </div>
