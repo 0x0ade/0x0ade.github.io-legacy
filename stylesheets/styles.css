@@ -750,7 +750,7 @@ dt {
   text-align: center;
 }
 #header nav li a:hover {
-  background-color: rgba(63, 63, 63, 0.625);
+  background-color: rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
