@@ -123,7 +123,6 @@ audio:not([controls]) {
  *    http://clagnut.com/blog/348/#c790
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
- * 3. Fixes performance issues with fixed-position backgrounds in webkit renderers
  */
 html {
   font-size: 100%;
@@ -131,8 +130,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-transform: translate3d(0, 0, 0);
+  /* 2 */
 }
 
 /*
