@@ -2,7 +2,7 @@
   title: "AngelDE98's Website",
   tagline: "I still need a better tagline.",
   base: "./base.html",
-  basePost: "./basePost.html",
+  basePost: "./base.html",
   baseHeadlessPost: "./baseHeadlessPost.html",
   entries: "./entries",
   output: "./index.html",
