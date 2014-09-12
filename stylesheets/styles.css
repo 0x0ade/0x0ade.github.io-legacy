@@ -693,10 +693,10 @@ hr {
   outline: none;
   height: 3px;
   background-color: rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   margin: 0 0 20px;
 }
 
@@ -705,10 +705,10 @@ section .post hr {
   outline: none;
   height: 3px;
   background-color: rgba(213, 226, 240, 0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   margin: 0 0 8px;
 }
 
@@ -804,7 +804,7 @@ section #title {
   outline: none;
   margin: 0 0 16px 0;
   padding: 0 0 5px 0;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 }
 section #title h1 {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -838,11 +838,11 @@ section .post {
   margin: 10px 0px 0px 0px;
   padding: 5px 10px 10px 5px;
   background-color: rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.65);
-  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.65);
-  -o-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.65);
-  box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.65);
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media print, screen and (max-width: 720px) {
