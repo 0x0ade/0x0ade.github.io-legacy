@@ -158,7 +158,8 @@ body {
  * Addresses outline displayed oddly in Chrome
  */
 a:focus {
-  outline: thin dotted;
+  /*outline: thin dotted;*/
+  outline: 0;
 }
 
 /*
@@ -616,10 +617,41 @@ strong {
 }
 
 .wrapper {
+  float: center;
   max-width: 650px;
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+}
+
+.sidebar {
+  float: left;
+  width: 64px;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  padding: 5px 10px 10px 5px;
+  /*background-color: rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
+  -o-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);*/
+}
+
+.sidebar img {
+  margin: 4px 0 4px 0;
+  -webkit-filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.8));
+  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='7'/><feOffset dx='0' dy='3' result='offsetblur'/><feFlood flood-color='rgba(0, 0, 0, 0.8)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=3, Color='#000')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=3, Color='#000')";
+}
+
+.sidebar a:hover img {
+  margin: 2px 0 6px 0;
+  -webkit-filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.8));
+  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' sttdDeviation='10'/><feOffset dx='0' dy='6' result='offsetblur'/><feFlood flood-color='rgba(0, 0, 0, 0.8)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#000')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#000')";
 }
 
 section img {
@@ -730,16 +762,15 @@ dt {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.65);
   /*border-bottom: 4px solid #434343;*/
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
+  -o-box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.65);
 }
 #header nav {
   max-width: 650px;
   margin: 0 auto;
   padding: 0 10px;
-  background: blue;
   margin: 6px auto;
 }
 #header nav li {
@@ -752,7 +783,7 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-#header nav li a {
+a.button {
   /*color: black;*/
   color: white;
   -moz-border-radius: 2px;
@@ -774,21 +805,13 @@ dt {
   display: inline-block;
   text-align: center;
 }
-#header nav li a:hover {
+a.button:hover {
   /*background-color: rgba(183, 196, 210, 0.65);*/
   background-color: rgba(0, 0, 0, 0.65);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
-}
-#header nav li.fork {
-  float: left;
-  margin-left: 0px;
-}
-#header nav li.downloads {
-  float: right;
-  margin-left: 6px;
 }
 #header nav li.title {
   float: right;
@@ -800,7 +823,7 @@ section {
   max-width: 650px;
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 section #title {
   border: 0;
