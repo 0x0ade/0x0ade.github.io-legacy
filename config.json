@@ -1,7 +1,9 @@
 {
   "title": "AngelDE98's Website",
+  "title_html": "AngelDE98's Website",
   "tagline": "I still need a better tagline.",
-  "post.title": "Main",
+  "title_html_post_prefix": ": ",
+  "title_html_post_suffix": "",
   "post.content_less": "AngelDE98's Website, blog posts, games and HTML and CSS testbed.",
   "base": "./base.html",
   "basePost": "./base.html",
