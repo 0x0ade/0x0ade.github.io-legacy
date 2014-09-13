@@ -1,11 +1,11 @@
 {
-  title: "AngelDE98's Website",
-  tagline: "I still need a better tagline.",
-  base: "./base.html",
-  basePost: "./base.html",
-  baseHeadlessPost: "./baseHeadlessPost.html",
-  baseLinkMore: "./baseLinkMore.html",
-  entries: "./entries",
-  output: "./index.html",
-  outputPosts: "./posts"
+  "title": "AngelDE98's Website",
+  "tagline": "I still need a better tagline.",
+  "base": "./base.html",
+  "basePost": "./base.html",
+  "baseHeadlessPost": "./baseHeadlessPost.html",
+  "baseLinkMore": "./baseLinkMore.html",
+  "entries": "./entries",
+  "output": "./index.html",
+  "outputPosts": "./posts"
 }
