@@ -4,6 +4,7 @@
   base: "./base.html",
   basePost: "./base.html",
   baseHeadlessPost: "./baseHeadlessPost.html",
+  baseLinkMore: "./baseLinkMore.html",
   entries: "./entries",
   output: "./index.html",
   outputPosts: "./posts"
