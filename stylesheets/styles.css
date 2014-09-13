@@ -932,7 +932,7 @@ section .postHeader {
   color: rgba(213, 226, 240, 0.4);
 }
 section .postShare {
-  transition-duration: 0.4s;
+  transition-duration: 1.6s;
   transition-property: max-height;
   max-height: 4px;
   overflow: hidden;
