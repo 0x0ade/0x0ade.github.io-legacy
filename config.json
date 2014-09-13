@@ -2,6 +2,7 @@
   "title": "AngelDE98's Website",
   "tagline": "I still need a better tagline.",
   "post.title": "Main",
+  "post.content": "AngelDE98's Website, blog posts, games and HTML and CSS testbed.",
   "base": "./base.html",
   "basePost": "./base.html",
   "baseHeadlessPost": "./baseHeadlessPost.html",
