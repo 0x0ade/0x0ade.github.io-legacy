@@ -1,6 +1,7 @@
 {
   "title": "AngelDE98's Website",
   "tagline": "I still need a better tagline.",
+  "post.title": "Main",
   "base": "./base.html",
   "basePost": "./base.html",
   "baseHeadlessPost": "./baseHeadlessPost.html",
