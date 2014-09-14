@@ -946,6 +946,16 @@ section .postHeader:hover .postShare {
   padding: 0 2px 0 2px;
   vertical-align: top;
 }
+section .postFooter {
+  transition-duration: 4s;
+  transition-property: max-height;
+  max-height: 100px;
+  overflow: hidden;
+}
+section .postFooter:hover {
+  max-height: 2048px;
+  overflow: auto;
+}
 
 @media print, screen and (max-width: 820px) {
   #title .credits {

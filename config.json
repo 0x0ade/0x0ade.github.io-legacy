@@ -9,6 +9,7 @@
   "basePost": "./base.html",
   "baseHeadlessPost": "./baseHeadlessPost.html",
   "baseLinkMore": "./baseLinkMore.html",
+  "baseComments": "./baseComments.html",
   "entries": "./entries",
   "output": "./index.html",
   "outputPosts": "./posts"
