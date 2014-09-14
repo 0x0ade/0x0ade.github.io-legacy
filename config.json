@@ -12,5 +12,5 @@
   "base.post.comments": "./baseComments.html",
   "entries": "./entries",
   "output": "./index.html",
-  "outputPosts": "./posts"
+  "output.posts": "./posts"
 }
