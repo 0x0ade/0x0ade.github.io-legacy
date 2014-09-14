@@ -999,6 +999,10 @@ section .postFooter:hover {
     max-height: 128px;
     overflow: hidden;
   }
+  section .postFooter {
+    max-height: 2048px;
+    overflow: auto;
+  }
 }
 @media print, screen and (max-width: 480px) {
   #header {
