@@ -1,4 +1,5 @@
 {
-  "title.html.prefix": ": ",
+  "post.id": 1,
+  "post.title": "Hello, World!",
   "post.description": "The second one with simple markdown bold and italic tests."
 }
