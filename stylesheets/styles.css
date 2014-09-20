@@ -562,11 +562,10 @@ strong {
 
 .sidebar {
   transition-duration: 0.3s;
-  transition-property: transform;
-  transform: translateX(-90px);
+  transition-property: left;
   z-index: 100;
   top: 0;
-  left: 0;
+  left: -90px;
   width: 64px;
   height: 100%;
   position: fixed;
@@ -578,7 +577,7 @@ strong {
   box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
 }
 .sidebar:hover, .menuicon:hover ~ .sidebar {
-  transform: translateZ(0);
+  left: 0;
 }
 .sidebar:hover ~ .dim, .menuicon:hover ~ .dim {
   background-color: rgba(0, 0, 0, 0.4);
