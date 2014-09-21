@@ -877,7 +877,11 @@ section {
     position: fixed;
     top: 100%;
     right: 0;
-    margin: -72px 4px 4px 4px;
+    margin: -72px 16px 4px 4px;
+  }
+  .floaticon {
+    width: 48px;
+    height: 48px;
   }
 }
 @media print, screen and (max-width: 480px) {
