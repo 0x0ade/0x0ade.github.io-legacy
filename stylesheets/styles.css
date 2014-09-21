@@ -583,7 +583,7 @@ strong {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.sidebar img {
+.sidebar img, .floaticon {
   transition-duration: 0.3s;
   transition-property: transform, -webkit-filter, filter;
   transform: translateZ(0);
@@ -592,7 +592,7 @@ strong {
   filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='2'/><feOffset dx='0' dy='2' result='offsetblur'/><feFlood flood-color='rgba(0, 0, 0, 0.2)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
 }
 
-.sidebar a:hover img {
+.sidebar a:hover img, a:hover .floaticon {
   transform: translateY(-4px);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
   filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='0' dy='4' result='offsetblur'/><feFlood flood-color='rgba(0, 0, 0, 0.4)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
@@ -788,6 +788,15 @@ section {
   font-size: 16px;
   text-align: left;
 }
+.floatlink {
+  position: absolute;
+  z-index: 98;
+  top: 32px;
+  margin: 0 0 0 682px;
+}
+.floaticon {
+  z-index: 99;
+}
 .post {
   transition-duration: 0.3s;
   transition-property: transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
@@ -863,6 +872,12 @@ section {
   }
   #title p {
     display: none;
+  }
+  .floatlink {
+    position: fixed;
+    top: 100%;
+    right: 0;
+    margin: -72px 4px 4px 4px;
   }
 }
 @media print, screen and (max-width: 480px) {
