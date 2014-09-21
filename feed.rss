@@ -16,16 +16,10 @@
     
     <item>
   <title>Hello, World!</title>
-  <description>The second one with simple markdown bold and italic tests.</description>
+  <description>TL;DR: Introduction into my new website.</description>
   <link>http://angelde98.github.io/posts/1.html</link>
   <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
   <guid>http://angelde98.github.io/posts/1.html</guid>
-</item><item>
-  <title>Hello, World</title>
-  <description>A basic lorem ipsum layout test post.</description>
-  <link>http://angelde98.github.io/posts/0.html</link>
-  <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
-  <guid>http://angelde98.github.io/posts/0.html</guid>
 </item>
     
   </channel>
