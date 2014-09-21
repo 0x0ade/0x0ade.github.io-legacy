@@ -1,0 +1,8 @@
+{
+  "title": "AngelDE98's Website",
+  "description": "AngelDE98's Website, blog posts, games and HTML / CSS testbed.",
+  "base": "./base.feed.rss",
+  "base.post.headless": "./base.feed.post.rss",
+  "entries": "./entries",
+  "output": "./feed.rss",
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="http://angelde98.github.io/feed.rss" rel="self" type="application/rss+xml" />
+    <title>AngelDE98's Website</title>
+    <link>http://angelde98.github.io</link>
+    <description>AngelDE98's Website, blog posts, games and HTML / CSS testbed.</description>
+    <language>en-US</language>
+    <copyright>Maik AngelDE98 Macho</copyright>
+    
+    <image>
+      <url>http://angelde98.github.com/favicon.png</url>
+      <title>AngelDE98's Website</title>
+      <link>http://angelde98.github.io</link>
+    </image>
+    
+    <item>
+  <title>Hello, World!</title>
+  <description>The second one with simple markdown bold and italic tests.</description>
+  <link>http://angelde98.github.io/posts/1.html</link>
+  <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
+  <guid>http://angelde98.github.io/posts/1.html</guid>
+</item><item>
+  <title>Hello, World</title>
+  <description>A basic lorem ipsum layout test post.</description>
+  <link>http://angelde98.github.io/posts/0.html</link>
+  <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
+  <guid>http://angelde98.github.io/posts/0.html</guid>
+</item>
+    
+  </channel>
+</rss>

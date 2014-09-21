@@ -1,0 +1,7 @@
+<item>
+  <title><!-- jsonblog.post.title --></title>
+  <description><!-- jsonblog.post.description --></description>
+  <link>http://angelde98.github.io/posts/<!-- jsonblog.post.id -->.html</link>
+  <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
+  <guid>http://angelde98.github.io/posts/<!-- jsonblog.post.id -->.html</guid>
+</item>

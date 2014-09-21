@@ -1,4 +1,4 @@
 {
   "title.html.prefix": ": ",
-  "base.posts": "./baseHeadlessPost.html",
+  "base.posts": "./base.post.headless.html",
 }
