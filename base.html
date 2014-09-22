@@ -29,30 +29,36 @@
     <meta name="author" content="Maik AngelDE98 Macho">
   </head>
   <body>
-    <img src="/images/icon-menu.png" alt="Menu" class="menuicon">
-    <div class="sidebar">
-      <aside>
-        <a href="/"><img src="/images/icon-angelde98.png" alt="AngelDE98" ></a>
-        <a href="http://fourbytes-team.github.io"><img src="/images/icon-fourbytes.png" alt="Fourbytes"></a>
-        <a href="http://github.com/AngelDE98"><img src="/images/icon-github.png" alt="AngelDE98 on GitHub"></a>
-        <a href="http://twitter.com/AngelDE98"><img src="/images/icon-twitter.png" alt="@AngelDE98 on Twitter"></a>
-      </aside>
+    <div itemscope itemtype="http://schema.org/Blog">
+      <img src="/images/icon-menu.png" alt="Menu" class="menuicon">
+      <div class="sidebar">
+        <aside>
+          <a href="/"><img src="/images/icon-angelde98.png" alt="AngelDE98" ></a>
+          <a href="http://fourbytes-team.github.io"><img src="/images/icon-fourbytes.png" alt="Fourbytes"></a>
+          <a href="http://github.com/AngelDE98"><img src="/images/icon-github.png" alt="AngelDE98 on GitHub"></a>
+          <a href="http://twitter.com/AngelDE98"><img src="/images/icon-twitter.png" alt="@AngelDE98 on Twitter"></a>
+        </aside>
+      </div>
+      <div id="title">
+        <h1 itemprop="name"><!-- jsonblog.title --></h1>
+        <p itemprop="description"><!-- jsonblog.tagline --></p>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <meta itemprop="name" content="Maik Macho">
+          <meta itemprop="alternateName" content="AngelDE98">
+        </span>
+      </div>
+      <div class="wrapper">
+        <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS Feed" class="floaticon"></a>
+        <section>
+          <!-- jsonblog.posts -->
+        </section>
+      </div>
+      
+      <div class="dim">
+      </div>
+      
+      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+      
     </div>
-    <div id="title">
-      <h1><!-- jsonblog.title --></h1>
-      <p><!-- jsonblog.tagline --></p>
-    </div>
-    <div class="wrapper">
-      <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS Feed" class="floaticon"></a>
-      <section>
-        <!-- jsonblog.posts -->
-      </section>
-    </div>
-    
-    <div class="dim">
-    </div>
-        
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
