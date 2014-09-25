@@ -600,7 +600,7 @@ strong {
 
 .more {
   transition-duration: 0.3s;
-  transition-property: transform, color;
+  transition-property: transform, color, background-color;
   transform: translateZ(0);
   color: rgba(0, 0, 0, 0.54);
   display: block;
@@ -617,6 +617,7 @@ strong {
 .more:hover {
   transform: translateY(6px);
   color: rgba(0, 0, 0, 0.87);
+  background-color: #9e9e9e;
 }
 
 .more p {
