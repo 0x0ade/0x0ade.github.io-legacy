@@ -9,6 +9,22 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    
+    <script src="http://www.polymer-project.org/components/platform/platform.js"></script>
+    <link rel="import" href="http://www.polymer-project.org/components/core-media-query/core-media-query.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
+    <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-icon/core-icon.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-button/paper-button.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-menu-button/paper-menu-button.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-item/paper-item.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-shadow/paper-shadow.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-fab/paper-fab.html">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -28,18 +44,15 @@
     <meta name="keywords" content="AngelDE98, Website, Homepage, Blog, Game, Developer, Java">
     <meta name="author" content="Maik AngelDE98 Macho">
   </head>
-  <body>
-    <div itemscope itemtype="http://schema.org/Blog">
-      <img src="/images/icon-menu.png" alt="Menu" class="menuicon">
-      <div class="sidebar">
-        <aside>
-          <a href="/"><img src="/images/icon-angelde98.png" alt="AngelDE98" ></a>
-          <a href="http://fourbytes-team.github.io"><img src="/images/icon-fourbytes.png" alt="Fourbytes"></a>
-          <a href="http://github.com/AngelDE98"><img src="/images/icon-github.png" alt="AngelDE98 on GitHub"></a>
-          <a href="http://twitter.com/AngelDE98"><img src="/images/icon-twitter.png" alt="@AngelDE98 on Twitter"></a>
-        </aside>
-      </div>
-      <div id="title">
+  <body fullbleed layout vertical unresolved>
+    <core-header-panel mode="scroll" flex itemscope itemtype="http://schema.org/Blog">
+      <div class="core-header">
+        <paper-menu-button icon="menu" class="menuicon">
+          <paper-item iconSrc="/images/icon-angelde98.png" label="Home"><a href="/"></a></paper-item>
+          <paper-item iconSrc="/images/icon-fourbytes.png" label="Fourbytes"><a href="http://fourbytes-team.github.io"></a></paper-item>
+          <paper-item iconSrc="/images/icon-github.png" label="AngelDE98 @ GitHub"><a href="http://github.com/AngelDE98"></a></paper-item>
+          <paper-item iconSrc="/images/icon-twitter.png" label="AngelDE98 @ Twitter"><a href="http://twitter.com/AngelDE98"></a></paper-item>
+        </paper-menu-button>
         <h1 itemprop="name">AngelDE98's Website</h1>
         <p itemprop="description">AngelDE98's blog posts, games and HTML / CSS testbed.</p>
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -47,9 +60,9 @@
           <meta itemprop="alternateName" content="AngelDE98">
         </span>
       </div>
-      <div class="wrapper">
-        <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS Feed" class="floaticon"></a>
+      <div class="content">
         <section>
+          <a href="http://angelde98.github.io/feed.rss" class="floatlink"><paper-fab iconSrc="/images/icon-rss-round.png" style="background-color: #ff9800; color: #fff;"></core-icon><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
           <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="postHeader">
     <h2><a href="/posts/1.html" itemprop="name">Hello, World!</a></h2>
@@ -83,15 +96,13 @@
   </script>
   <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
 </div>
+  <paper-shadow z="1"></paper-shadow>
 </div>
         </section>
       </div>
-      
-      <div class="dim">
-      </div>
-      
-      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-      
-    </div>
+    </core-header-panel>
+    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>

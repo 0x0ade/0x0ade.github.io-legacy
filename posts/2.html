@@ -9,6 +9,22 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    
+    <script src="http://www.polymer-project.org/components/platform/platform.js"></script>
+    <link rel="import" href="http://www.polymer-project.org/components/core-media-query/core-media-query.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
+    <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-icon/core-icon.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-button/paper-button.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-menu-button/paper-menu-button.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-item/paper-item.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-shadow/paper-shadow.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-fab/paper-fab.html">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -28,18 +44,15 @@
     <meta name="keywords" content="AngelDE98, Website, Homepage, Blog, Game, Developer, Java">
     <meta name="author" content="Maik AngelDE98 Macho">
   </head>
-  <body>
-    <div itemscope itemtype="http://schema.org/Blog">
-      <img src="/images/icon-menu.png" alt="Menu" class="menuicon">
-      <div class="sidebar">
-        <aside>
-          <a href="/"><img src="/images/icon-angelde98.png" alt="AngelDE98" ></a>
-          <a href="http://fourbytes-team.github.io"><img src="/images/icon-fourbytes.png" alt="Fourbytes"></a>
-          <a href="http://github.com/AngelDE98"><img src="/images/icon-github.png" alt="AngelDE98 on GitHub"></a>
-          <a href="http://twitter.com/AngelDE98"><img src="/images/icon-twitter.png" alt="@AngelDE98 on Twitter"></a>
-        </aside>
-      </div>
-      <div id="title">
+  <body fullbleed layout vertical unresolved>
+    <core-header-panel mode="scroll" flex itemscope itemtype="http://schema.org/Blog">
+      <div class="core-header">
+        <paper-menu-button icon="menu" class="menuicon">
+          <paper-item iconSrc="/images/icon-angelde98.png" label="Home"><a href="/"></a></paper-item>
+          <paper-item iconSrc="/images/icon-fourbytes.png" label="Fourbytes"><a href="http://fourbytes-team.github.io"></a></paper-item>
+          <paper-item iconSrc="/images/icon-github.png" label="AngelDE98 @ GitHub"><a href="http://github.com/AngelDE98"></a></paper-item>
+          <paper-item iconSrc="/images/icon-twitter.png" label="AngelDE98 @ Twitter"><a href="http://twitter.com/AngelDE98"></a></paper-item>
+        </paper-menu-button>
         <h1 itemprop="name">AngelDE98's Website</h1>
         <p itemprop="description">AngelDE98's blog posts, games and HTML / CSS testbed.</p>
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -47,9 +60,9 @@
           <meta itemprop="alternateName" content="AngelDE98">
         </span>
       </div>
-      <div class="wrapper">
-        <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS Feed" class="floaticon"></a>
+      <div class="content">
         <section>
+          <a href="http://angelde98.github.io/feed.rss" class="floatlink"><paper-fab iconSrc="/images/icon-rss-round.png" style="background-color: #ff9800; color: #fff;"></core-icon><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
           <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="postHeader">
     <h2><a href="/posts/2.html" itemprop="name">Looking up to Polymer</a></h2>
@@ -66,7 +79,11 @@
 <h3>Polymer.</h3>
 <p>It was just recently (selfnote: add publish dates; around 2014-09-25) when I noticed a tweet from the Polymer Twitter account on my timeline. As I didn't follow Polymer, I was lucky that someone else was retweeting their tweet. Recognizing their logo, I went to their homepage just to find the reference implementation of the Material guidelines for the web platform. I noticed it was lacking animations in some parts, but was more mature than my little test theme I've created by modifying Matt Graham's &ldquo;Midnight&rdquo;.</p>
 <p>As I already have twice changed the design of my website, I kind of hate myself for doing it a third time. But for reference, a button (which you may not find often on my website) looks like following as of the time you are viewing this page: <a class="button" href="javascript:;">I'm a button!</a></p>
-<p>As I like to do stuff by myself to learn stuff, I guess it's time to adapt my design to Polymer. I'm not going to replace it with Polymer yet. Maybe I won't ever replace my design with Polymer. But I like that there's another, greater, better, implementation of the Material design out there.</p>
+<p>As I like to do stuff by myself to learn stuff, I guess it's time to adapt my design to Polymer. I'm not going to replace it with Polymer yet. <s>Maybe I won't ever replace my design with Polymer</s>. But I like that there's another, greater, better, implementation of the Material design out there.</p>
+<p>EDIT #1: It's great.</p>
+<p>I had some smaller problems with implementing the toolbar being overlapped by the posts, so I went with a header area like the old one. Also, the sidebar has been replaced by a menu button.</p>
+<p>I still need to rework some of the on-hover effects as the cursor is the &ldquo;digital hand&rdquo;, which means you should be able to pick up or focus on the material with the &ldquo;digital hand&rdquo; by hovering and write to it with the &ldquo;ink&rdquo; by clicking. Latter is specified by the Material guidelines, but not the focus.</p>
+<p>Reference Polymer buttons: <paper-button raisedButton label="I'm a button!" style="background: #fff;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #03a9f4;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #259b24;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #e51c23;"></paper-button></p>
   </span>
   <!-- jsonblog.post.more -->
   <div class="postFooter">
@@ -83,15 +100,13 @@
   </script>
   <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
 </div>
+  <paper-shadow z="1"></paper-shadow>
 </div>
         </section>
       </div>
-      
-      <div class="dim">
-      </div>
-      
-      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-      
-    </div>
+    </core-header-panel>
+    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>

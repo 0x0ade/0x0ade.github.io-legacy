@@ -512,15 +512,16 @@ h3 {
 a {
   display: inline-block;
   transition-duration: 0.3s;
-  transition-property: transform, color;
-  transform: translateZ(0);
+  transition-property: color;
   color: rgba(1, 87, 155, 0.87);
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  transform: translateY(-2px);
   color: rgba(2, 136, 209, 0.87);
+}
+a image {
+  color: #fafafa;
 }
 
 a small {
@@ -539,69 +540,15 @@ strong {
   font-weight: normal;
 }
 
-.wrapper {
+.content {
   max-width: 650px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 20px;
-}
-
-.dim {
-  pointer-events: none;
-  display: block;
-  transition-duration: 0.3s;
-  transition-property: background-color;
-  z-index: 98;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.sidebar {
-  transition-duration: 0.3s;
-  transition-property: left;
-  z-index: 100;
-  top: 0;
-  left: -90px;
-  width: 64px;
-  height: 100%;
-  position: fixed;
-  padding: 10px 16px 10px 16px;
-  background-color: white;
-  -moz-box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
-}
-.sidebar:hover, .menuicon:hover ~ .sidebar {
-  left: 0;
-}
-.sidebar:hover ~ .dim, .menuicon:hover ~ .dim {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.sidebar img, .floaticon {
-  transition-duration: 0.3s;
-  transition-property: transform, -webkit-filter, filter;
-  transform: translateZ(0);
-  margin: 4px 4px 4px 4px;
-  -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
-  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='2'/><feOffset dx='0' dy='2' result='offsetblur'/><feFlood flood-color='rgba(0, 0, 0, 0.2)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
-}
-
-.sidebar a:hover img, a:hover .floaticon {
-  transform: translateY(-4px);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
-  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='0' dy='4' result='offsetblur'/><feFlood flood-color='rgba(0, 0, 0, 0.4)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  margin: 0 auto 48px auto;
+  padding: 128px 20px 0 20px;
 }
 
 .more {
   transition-duration: 0.3s;
-  transition-property: transform, color, background-color, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;;
-  transform: translateZ(0);
+  transition-property: color, background-color, margin, padding;
   color: rgba(0, 0, 0, 0.54);
   display: block;
   text-align: center;
@@ -610,18 +557,15 @@ strong {
   width: 100%;
   height: 100%;
   background-image: url("/images/icon-more.png");
-  background-color: #bdbdbd;
+  background-color: #9e9e9e;
   background-repeat: repeat-x;
 }
 
 .more:hover {
-  transform: translateY(6px);
+  margin: 16px -10px -10px -10px;
+  padding: -16px 10px 10px 10px;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #9e9e9e;
-  -moz-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+  background-color: #bdbdbd;
 }
 
 .more p {
@@ -629,7 +573,7 @@ strong {
   margin: 0 0 0 0;
 }
 
-section img {
+.content img {
   max-width: 100%;
 }
 
@@ -664,10 +608,6 @@ pre {
   -khtml-border-radius: 2px;
   border-radius: 2px;
   border: 1px solid #121212;
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
   overflow: auto;
   overflow-y: hidden;
 }
@@ -703,10 +643,6 @@ hr {
   outline: none;
   height: 3px;
   background-color: rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   margin: 0 0 20px;
 }
 
@@ -715,10 +651,6 @@ hr {
   outline: none;
   height: 3px;
   background-color: rgba(213, 226, 240, 0.5);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   margin: 0 0 8px;
 }
 
@@ -752,79 +684,60 @@ dt {
   box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.4);
 }
 
-section {
-  max-width: 650px;
-  padding: 16px 0px 40px 0px;
-  margin: 20px 0;
-  margin-top: 20px;
-}
 .menuicon {
   z-index: 99;
   display: block;
   width: 32px;
   height: 32px;
   position: fixed;
-  top: 16px;
-  left: 16px;
+  top: 36px;
+  left: 4px;
   margin: 8px 8px 8px 8px;
+  color: #fafafa;
 }
-#title {
+.core-header {
   background-color: #009688;
   background-image: url("/images/background.jpg");
   background-attachment: fixed !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat;
-  border: 0;
-  outline: none;
-  margin: 0 auto -96px auto;
-  padding: 128px 0 48px 128px;
+  padding: 40px 8px 32px 8px;
+  margin: 0 0 -192px 0;
 }
-#title h1 {
+.core-header h1 {
   color: rgba(255, 255, 255, 0.87);
   font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 52px;
   text-align: left;
   line-height: 52px;
+  padding: 0 0 0 48px;
 }
-#title p {
+.core-header p {
   color: rgba(255, 255, 255, 0.87);
   font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   text-align: left;
+  padding: 0 0 0 48px;
 }
 .floatlink {
   position: absolute;
   z-index: 98;
-  top: 32px;
   margin: 0 0 0 682px;
 }
-.floaticon {
-  z-index: 99;
-}
 .post {
-  transition-duration: 0.3s;
-  transition-property: -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
   z-index: 49;
   margin: 30px 0 0 0;
   padding: 10px 10px 10px 10px;
   background-color: #f5f5f5;
-  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .post:hover {
   z-index: 50;
-  -moz-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
 }
 .postHeader {
-  padding: 4px 4px 4px 4px;
+  padding: 2px 2px 2px 2px;
 }
 .postHeader h2 {
    margin: 0 0 -10px;
@@ -837,8 +750,6 @@ section {
 }
 .postHeader a, 
 .postHeader div {
-  margin: 0 2px 0 2px;
-  padding: 0 2px 0 2px;
   vertical-align: top;
 }
 
@@ -852,31 +763,30 @@ section {
     width: 24px;
     height: 24px;
     position: fixed;
-    top: 8px;
-    left: 8px;
-    margin: 8px 8px 8px 8px;
+    top: 0px;
+    left: 0px;
+    margin: 4px 4px 4px 4px;
   }
-  #title {
+  .core-header {
     background-image: url("");
     z-index: 98;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 40px;
-    margin: 0 auto 0 auto;
-    padding: 16px 4px 0px 64px;
-    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-    -o-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    height: 48px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
-  #title h1 {
+  .core-header h1 {
     font-size: 24px;
     line-height: 24px;
+    position: fixed;
+    top: 12px;
   }
-  #title p {
+  .core-header p {
     display: none;
+  }
+  .content {
+    padding: 48px 20px 0 20px;
   }
   .floatlink {
     position: fixed;
@@ -884,13 +794,7 @@ section {
     right: 0;
     margin: -72px 16px 4px 4px;
   }
-  .floaticon {
-    width: 48px;
-    height: 48px;
-  }
   .post {
-    transition-duration: 0.3s;
-    transition-property: transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
     z-index: 49;
     margin: 16px -6px -6px -6px;
     padding: 10px 10px 10px 10px;
@@ -899,13 +803,5 @@ section {
 @media print, screen and (max-width: 480px) {
   #header {
     margin-top: -20px;
-  }
-
-  section {
-    margin-top: 40px;
-  }
-
-  nav {
-    display: none;
   }
 }

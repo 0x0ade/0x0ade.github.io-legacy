@@ -8,4 +8,12 @@ It was just recently (selfnote: add publish dates; around 2014-09-25) when I not
 
 As I already have twice changed the design of my website, I kind of hate myself for doing it a third time. But for reference, a button (which you may not find often on my website) looks like following as of the time you are viewing this page: <a class="button" href="javascript:;">I'm a button!</a>  
 
-As I like to do stuff by myself to learn stuff, I guess it's time to adapt my design to Polymer. I'm not going to replace it with Polymer yet. Maybe I won't ever replace my design with Polymer. But I like that there's another, greater, better, implementation of the Material design out there.  
+As I like to do stuff by myself to learn stuff, I guess it's time to adapt my design to Polymer. I'm not going to replace it with Polymer yet. ~~Maybe I won't ever replace my design with Polymer~~. But I like that there's another, greater, better, implementation of the Material design out there.  
+
+EDIT #1: It's great.  
+
+I had some smaller problems with implementing the toolbar being overlapped by the posts, so I went with a header area like the old one. Also, the sidebar has been replaced by a menu button.
+
+I still need to rework some of the on-hover effects as the cursor is the "digital hand", which means you should be able to pick up or focus on the material with the "digital hand" by hovering and write to it with the "ink" by clicking. Latter is specified by the Material guidelines, but not the focus.
+
+Reference Polymer buttons: <paper-button raisedButton label="I'm a button!" style="background: #fff;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #03a9f4;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #259b24;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #e51c23;"></paper-button>  
