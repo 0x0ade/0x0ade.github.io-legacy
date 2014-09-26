@@ -46,7 +46,7 @@
   </head>
   <body fullbleed layout vertical unresolved>
     <core-header-panel mode="scroll" flex itemscope itemtype="http://schema.org/Blog">
-      <div class="core-header">
+      <div id="top" class="core-header">
         <paper-menu-button icon="menu" class="menuicon">
           <paper-item iconSrc="/images/icon-angelde98.png" label="Home"><a href="/"></a></paper-item>
           <paper-item iconSrc="/images/icon-fourbytes.png" label="Fourbytes"><a href="http://fourbytes-team.github.io"></a></paper-item>
@@ -63,6 +63,7 @@
       <div class="content">
         <section>
           <a href="http://angelde98.github.io/feed.rss" class="floatlink"><paper-fab iconSrc="/images/icon-rss-round.png" style="background-color: #ff9800; color: #fff;"></core-icon><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
+          
           <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="postHeader">
     <h2><a href="/posts/2.html" itemprop="name">Looking up to Polymer</a></h2>
@@ -109,6 +110,9 @@
   <paper-shadow z="1"></paper-shadow>
 </div>
         </section>
+      </div>
+      <div class="footer">
+        <a href="#top"><paper-button label="AngelDE98 2014" style="background: rgba(255, 255, 255, 0);"></paper-icon-button></a>
       </div>
     </core-header-panel>
     
