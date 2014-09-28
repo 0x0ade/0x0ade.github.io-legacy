@@ -859,6 +859,21 @@ dt {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
   }
+  
+  .header, .footer {
+    transition-duration: 0.5s;
+    transition-property: -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
+    -moz-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+  }
+  .header:hover, .footer:hover {
+    -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  }
 
   .content {
     padding: 48px 20px 0 20px;
