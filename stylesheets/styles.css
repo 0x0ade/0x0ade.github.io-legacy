@@ -695,7 +695,10 @@ dt {
   margin: 8px 8px 8px 8px;
   color: #fafafa;
 }
-.core-header {
+#dropdown {
+  background-color: #fafafa;
+}
+.header {
   color: rgba(255, 255, 255, 0.87);
   font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -709,12 +712,16 @@ dt {
   padding: 40px 8px 32px 8px;
   margin: 0 0 -192px 0;
 }
-.core-header h1 {
+.header h1 {
+  font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 52px;
   line-height: 52px;
   padding: 0 0 0 48px;
 }
-.core-header p {
+.header p {
+  font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 16px;
   padding: 0 0 0 48px;
 }
@@ -777,7 +784,7 @@ dt {
     left: 0px;
     margin: 4px 4px 4px 4px;
   }
-  .core-header {
+  .header {
     background-image: url("");
     z-index: 98;
     position: fixed;
@@ -786,13 +793,13 @@ dt {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
   }
-  .core-header h1 {
+  .header h1 {
     font-size: 24px;
     line-height: 24px;
     position: fixed;
     top: 12px;
   }
-  .core-header p {
+  .header p {
     display: none;
   }
   
