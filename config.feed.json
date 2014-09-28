@@ -1,8 +1,12 @@
 {
   "title": "AngelDE98's Website",
   "description": "AngelDE98's blog posts, games and HTML / CSS testbed.",
-  "base": "./base.feed.rss",
-  "base.post.headless": "./base.feed.post.rss",
+  "bases": {
+    "main": "./base.feed.rss",
+    "post.headless": "./base.feed.post.rss"
+  },
   "entries": "./entries",
-  "output": "./feed.rss",
+  "output": {
+    "main": "./feed.rss"
+  }
 }

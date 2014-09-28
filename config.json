@@ -3,14 +3,20 @@
   "title.html.prefix": "",
   "title.html.suffix": "",
   "tagline": "AngelDE98's blog posts, games and HTML / CSS testbed.",
-  "post.title": "",
-  "post.description": "AngelDE98's blog posts, games and HTML / CSS testbed.",
-  "base": "./base.html",
-  "base.post": "./base.html",
-  "base.post.headless": "./base.post.headless.html",
-  "base.post.more": "./base.post.more.html",
-  "base.post.comments": "./base.comments.html",
+  "post": {
+    "title": "",
+    "description": "AngelDE98's blog posts, games and HTML / CSS testbed."
+  },
+  "bases": {
+    "main": "./base.html",
+    "post": "./base.html",
+    "post.headless": "./base.post.headless.html",
+    "post.more": "./base.post.more.html",
+    "post.comments": "./base.comments.html"
+  },
   "entries": "./entries",
-  "output": "./index.html",
-  "output.posts": "./posts"
+  "output": {
+    "main": "./index.html",
+    "posts": "./posts"
+  }
 }

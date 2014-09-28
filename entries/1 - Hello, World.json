@@ -1,5 +1,7 @@
 {
-  "post.id": 1,
-  "post.title": "Hello, World!",
-  "post.description": "TL;DR: Introduction into my new website."
+  "post": {
+    "id": 1,
+    "title": "Hello, World!",
+    "description": "TL;DR: Introduction into my new website."
+  }
 }

@@ -1,5 +1,7 @@
 {
-  "post.id": 2,
-  "post.title": "Looking up to Polymer",
-  "post.description": "Just found Polymer again and fell in love with it AGAIN."
+  "post": {
+    "id": 2,
+    "title": "Looking up to Polymer",
+    "description": "Just found Polymer again and fell in love with it AGAIN."
+  }
 }
