@@ -1,7 +1,9 @@
 {
   "title": "AngelDE98's Website",
-  "title.html.prefix": "",
-  "title.html.suffix": "",
+  "title.html": {
+    "prefix": "",
+    "suffix": ""
+  },
   "tagline": "AngelDE98's blog posts, games and HTML / CSS testbed.",
   "post": {
     "title": "",
