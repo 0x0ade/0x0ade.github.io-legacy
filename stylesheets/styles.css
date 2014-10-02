@@ -468,7 +468,7 @@ body {
   color: rgba(0, 0, 0, 0.87);
   font-weight: normal;
   background-color: #e0e0e0;
-  background-image: url("/images/background3.jpg");
+  background-image: url("/images/background2.jpg");
   background-attachment: fixed !important;
   background-size: cover !important;
   background-position: center !important;
@@ -663,7 +663,7 @@ dt {
 
 .button {
   transition-duration: 0.3s;
-  transition-property: -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
+  transition-property: color, transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
   color: rgba(0, 0, 0, 0.87);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.4);
@@ -676,28 +676,100 @@ dt {
   font-size: 14px;
   display: inline-block;
   text-align: center;
+  border-radius: 2px;
 }
 .button:hover {
-  transform: translateZ(0);
-  -moz-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.4);
-  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4), 0px 0px 2px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
 }
 
 .menuicon {
-  z-index: 99;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0);
+  z-index: 98;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   position: fixed;
-  top: 36px;
-  left: 4px;
+  top: 42px;
+  left: 12px;
   margin: 8px 8px 8px 8px;
   color: #fafafa;
 }
-#dropdown {
-  background-color: #fafafa;
+.menuicon:hover {
+  transform: translateY(-2px);
+}
+.menu {
+  transition-duration: 0.3s;
+  transition-property: left;
+  z-index: 101;
+  display: block;
+  background-color: #f5f5f5;
+  position: fixed;
+  padding: 8px 16px 8px 8px;
+  top: 0;
+  left: -232px;
+  width: 192px;
+  height: 100%;
+  text-align: left;
+  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
+}
+.menuicon:hover ~ .menu, .menu:hover {
+  left: 0;
+}
+.menu img {
+  transition-duration: 0.3s;
+  transition-property: transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
+  width: 216px;
+  transform: translateZ(0);
+  -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.menu img:hover {
+  transform: translateY(-2px);
+  -moz-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+}
+.menu .button {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 0 0;
+  border-radius: 0;
+}
+.menu .button img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px -6px 0;
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -o-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.dark {
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  z-index: 100;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.menuicon:hover ~ .dark, .menu:hover ~ .dark {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .header {
   color: rgba(255, 255, 255, 0.87);
@@ -760,7 +832,7 @@ dt {
   position: absolute;
   width: 56px;
   height: 56px;
-  z-index: 98;
+  z-index: 97;
   margin: 0 0 0 682px;
   color: #ffffff;
   background-color: #ff9800;
@@ -828,13 +900,13 @@ dt {
   .menuicon {
     display: block;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 9px;
+    left: 9px;
     margin: 4px 4px 4px 4px;
   }
   .header {
     background-image: url("");
-    z-index: 98;
+    z-index: 97;
     position: fixed;
     width: 100%;
     height: 48px;
@@ -853,7 +925,6 @@ dt {
   
   .footer {
     background-image: url("");
-    z-index: 98;
     width: 100%;
     height: 48px;
     margin: 0 0 0 0;

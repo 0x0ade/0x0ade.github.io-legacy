@@ -10,22 +10,6 @@
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     
-    <script src="http://www.polymer-project.org/components/platform/platform.js"></script>
-    
-    <link rel="import" href="http://www.polymer-project.org/components/core-media-query/core-media-query.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
-    <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-icon/core-icon.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-header-panel/core-header-panel.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-toolbar/core-toolbar.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-button/paper-button.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-icon-button/paper-icon-button.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-menu-button/paper-menu-button.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-item/paper-item.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-shadow/paper-shadow.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-fab/paper-fab.html">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -47,13 +31,15 @@
   </head>
   <body unresolved>
     <div itemscope itemtype="http://schema.org/Blog">
+      <img src="/images/icon-menu.png" alt="menu icon" class="menuicon">
+      <div class="menu">
+        <img src="/images/background2.jpg" alt="sidebar image">
+        <a href="/" class="button"><img src="/images/icon-angelde98.png" alt="Home">Home</a>
+        <a href="http://fourbytes-team.github.io" class="button"><img src="/images/icon-fourbytes.png" alt="Fourbytes">Fourbytes</a>
+        <a href="http://github.com/AngelDE98" class="button"><img src="/images/icon-github.png" alt="AngelDE98 @ GitHub">AngelDE98 @ GitHub</a>
+        <a href="http://twitter.com/AngelDE98" class="button"><img src="/images/icon-twitter.png" alt="AngelDE98 @ Twitter">AngelDE98 @ Twitter</a>
+      </div>
       <div class="header">
-        <paper-menu-button icon="menu" class="menuicon">
-          <paper-item iconSrc="/images/icon-angelde98.png" label="Home"><a href="/"></a></paper-item>
-          <paper-item iconSrc="/images/icon-fourbytes.png" label="Fourbytes"><a href="http://fourbytes-team.github.io"></a></paper-item>
-          <paper-item iconSrc="/images/icon-github.png" label="AngelDE98 @ GitHub"><a href="http://github.com/AngelDE98"></a></paper-item>
-          <paper-item iconSrc="/images/icon-twitter.png" label="AngelDE98 @ Twitter"><a href="http://twitter.com/AngelDE98"></a></paper-item>
-        </paper-menu-button>
         <h1 itemprop="name">AngelDE98's Website</h1>
         <p itemprop="description">AngelDE98's blog posts, games and HTML / CSS testbed.</p>
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -63,7 +49,7 @@
       </div>
       <div class="content">
         <section>
-          <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png"><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
+          <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS icon"><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
           
           <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="postHeader">
@@ -107,7 +93,9 @@
         </section>
       </div>
       <div class="footer">
-        <paper-button label="AngelDE98 2014" style="background: rgba(255, 255, 255, 0);"></paper-icon-button>
+        <div class="button" style="background-color: rgba(255, 255, 255, 0); color: #fff;">AngelDE98 2014</div>
+      </div>
+      <div class="dark">
       </div>
     </div>
     
