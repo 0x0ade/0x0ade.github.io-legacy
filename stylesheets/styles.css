@@ -776,7 +776,7 @@ dt {
   font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-align: left;
-  background-color: #009688;
+  background-color: #03a9f4;
   background-image: url("/images/background.jpg");
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -800,7 +800,7 @@ dt {
 }
 .footer {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #009688;
+  background-color: #03a9f4;
   background-image: url("/images/background.jpg");
   background-attachment: fixed !important;
   background-size: cover !important;
