@@ -16,4 +16,8 @@ I had some smaller problems with implementing the toolbar being overlapped by th
 
 I still need to rework some of the on-hover effects as the cursor is the "digital hand", which means you should be able to pick up or focus on the material with the "digital hand" by hovering and write to it with the "ink" by clicking. Latter is specified by the Material guidelines, but not the focus.
 
-Reference Polymer buttons: <paper-button raisedButton label="I'm a button!" style="background: #fff;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #03a9f4;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #259b24;"></paper-button> <paper-button raisedButton label="I'm a button!" style="background: #e51c23;"></paper-button>  
+EDIT #2: It's still buggy.  
+
+As it still is in a testing phase, it was obvious that it's not perfect. Most of the caused problems were mobile mode problems. Also, creating my own Material implementation gives me more freedom.  
+
+Maybe I'll retry as soon as it's stable, not just mature.
