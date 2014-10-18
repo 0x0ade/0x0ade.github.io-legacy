@@ -1,10 +1,11 @@
 {
-  "title": "AngelDE98's Website",
+  "imports": [
+    "./config.blogdata.json"
+  ],
   "title.html": {
     "prefix": "",
     "suffix": ""
   },
-  "tagline": "AngelDE98's blog posts, games and HTML / CSS testbed.",
   "post": {
     "title": "",
     "description": "AngelDE98's blog posts, games and HTML / CSS testbed."

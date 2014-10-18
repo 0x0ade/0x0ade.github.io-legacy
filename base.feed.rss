@@ -4,7 +4,7 @@
     <atom:link href="http://angelde98.github.io/feed.rss" rel="self" type="application/rss+xml" />
     <title><!-- jsonblog.title --></title>
     <link>http://angelde98.github.io</link>
-    <description><!-- jsonblog.description --></description>
+    <description><!-- jsonblog.tagline --></description>
     <language>en-US</language>
     <copyright>Maik AngelDE98 Macho</copyright>
     

@@ -12,9 +12,11 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
+    <script src="/javascripts/scrolltoolbar.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://platform.twitter.com/widgets.js" async defer></script>
     <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0" async defer></script>
+    <script src="http://www.google.com/cse/cse.js?cx=005453329356042368377:l1eqyxm6l68" async defer></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -32,6 +34,7 @@
   <body unresolved>
     <div itemscope itemtype="http://schema.org/Blog">
       <img src="/images/icon-menu.png" alt="menu icon" class="menuicon">
+      <img src="/favicon.png" alt="app icon" class="appicon">
       <div class="menu">
         <img src="/images/background.jpg" alt="sidebar image">
         <a href="/" class="button"><img src="/images/icon-angelde98.png" alt="Home">Home</a>
@@ -52,7 +55,10 @@
         </div>
         <div class="content">
           <section>
-            <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS icon"><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
+            <div id="toolbar">
+              <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS icon"></a>
+              <gcse:search></gcse:search>
+            </div>
             
             <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="postHeader">

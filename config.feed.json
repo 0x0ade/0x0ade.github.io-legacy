@@ -1,6 +1,7 @@
 {
-  "title": "AngelDE98's Website",
-  "description": "AngelDE98's blog posts, games and HTML / CSS testbed.",
+  "imports": [
+    "./config.blogdata.json"
+  ],
   "bases": {
     "main": "./base.feed.rss",
     "post.headless": "./base.feed.post.rss"
