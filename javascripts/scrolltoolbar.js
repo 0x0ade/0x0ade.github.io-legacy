@@ -1,5 +1,5 @@
 var previousTop = $(window).scrollTop();
-$(window).scroll(function(){
+$(window).scroll(function() {
     if ($(this).width() < 820) {
       $(".headerimg").css("margin", ($(this).scrollTop() * 0.75 - 33)+"px 0 "+(-($(this).scrollTop() * 0.75) - 33)+"px 0");
       $(".header").css("background-color", "rgba(3, 169, 244, "+($(this).scrollTop() / $(".headerimg").outerHeight(true))+")");

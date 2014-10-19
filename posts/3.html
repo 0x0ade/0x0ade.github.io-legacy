@@ -3,33 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>AngelDE98's Website: Switched to Polymer</title>
+    <title>AngelDE98's Website: Android L on unsupported devices</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     
-    <script src="http://www.polymer-project.org/components/platform/platform.js"></script>
-    <link rel="import" href="http://www.polymer-project.org/components/core-media-query/core-media-query.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
-    <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-icon/core-icon.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-header-panel/core-header-panel.html">
-    <link rel="import" href="http://www.polymer-project.org/components/core-toolbar/core-toolbar.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-button/paper-button.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-icon-button/paper-icon-button.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-menu-button/paper-menu-button.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-item/paper-item.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-shadow/paper-shadow.html">
-    <link rel="import" href="http://www.polymer-project.org/components/paper-fab/paper-fab.html">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/javascripts/respond.js"></script>
+    <script src="/javascripts/scrolltoolbar.js" async defer></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://platform.twitter.com/widgets.js" async defer></script>
     <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0" async defer></script>
+    <script src="http://www.google.com/cse/cse.js?cx=005453329356042368377:l1eqyxm6l68" async defer></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -40,19 +27,22 @@
 
     <meta property="og:image" content="http://angelde98.github.com/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://angelde98.github.com/feed.rss" />
-    <meta name="description" content="It's great.">
+    <meta name="description" content="The pain of getting unsupported software updates to run.">
     <meta name="keywords" content="AngelDE98, Website, Homepage, Blog, Game, Developer, Java">
     <meta name="author" content="Maik AngelDE98 Macho">
   </head>
-  <body fullbleed layout vertical unresolved>
-    <core-header-panel mode="scroll" flex itemscope itemtype="http://schema.org/Blog">
-      <div class="core-header">
-        <paper-menu-button icon="menu" class="menuicon">
-          <paper-item iconSrc="/images/icon-angelde98.png" label="Home"><a href="/"></a></paper-item>
-          <paper-item iconSrc="/images/icon-fourbytes.png" label="Fourbytes"><a href="http://fourbytes-team.github.io"></a></paper-item>
-          <paper-item iconSrc="/images/icon-github.png" label="AngelDE98 @ GitHub"><a href="http://github.com/AngelDE98"></a></paper-item>
-          <paper-item iconSrc="/images/icon-twitter.png" label="AngelDE98 @ Twitter"><a href="http://twitter.com/AngelDE98"></a></paper-item>
-        </paper-menu-button>
+  <body unresolved>
+    <div itemscope itemtype="http://schema.org/Blog">
+      <img src="/images/icon-menu.png" alt="menu icon" class="menuicon">
+      <img src="/favicon.png" alt="app icon" class="appicon">
+      <div class="menu">
+        <img src="/images/background.jpg" alt="sidebar image">
+        <a href="/" class="button"><img src="/images/icon-angelde98.png" alt="Home">Home</a>
+        <a href="http://fourbytes-team.github.io" class="button"><img src="/images/icon-fourbytes.png" alt="Fourbytes">Fourbytes</a>
+        <a href="http://github.com/AngelDE98" class="button"><img src="/images/icon-github.png" alt="AngelDE98 @ GitHub">AngelDE98 @ GitHub</a>
+        <a href="http://twitter.com/AngelDE98" class="button"><img src="/images/icon-twitter.png" alt="AngelDE98 @ Twitter">AngelDE98 @ Twitter</a>
+      </div>
+      <div class="header">
         <h1 itemprop="name">AngelDE98's Website</h1>
         <p itemprop="description">AngelDE98's blog posts, games and HTML / CSS testbed.</p>
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -60,24 +50,88 @@
           <meta itemprop="alternateName" content="AngelDE98">
         </span>
       </div>
-      <div class="content">
-        <section>
-          <a href="http://angelde98.github.io/feed.rss" class="floatlink"><paper-fab iconSrc="/images/icon-rss-round.png" style="background-color: #ff9800; color: #fff;"></core-icon><paper-ripple class="circle recenteringTouch" fit></paper-ripple></a>
-          <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <div class="headerimg">
+      </div>
+      <div class="main">
+        <div class="content">
+          <section>
+            <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS icon"></a>
+            <div id="toolbar">
+              <gcse:search></gcse:search>
+            </div>
+            
+            <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="postHeader">
-    <h2><a href="/posts/3.html" itemprop="name">Switched to Polymer</a></h2>
-    <meta itemprop="description" content="It's great.">
+    <h2><a href="/posts/3.html" itemprop="name">Android L on unsupported devices</a></h2>
+    <meta itemprop="description" content="The pain of getting unsupported software updates to run.">
     <p>#3</p>
     <div class="postShare">
       <div class="g-plus" data-action="share" data-href="/posts/3.html" data-annotation="bubble"></div>
       <div class="fb-share-button" data-href="http://angelde98.github.io/posts/3.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/3.html" data-text="Switched to Polymer on @AngelDE98's Website: " data-dnt="true">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/3.html" data-text="Android L on unsupported devices on @AngelDE98's Website: " data-dnt="true">Tweet</a>
     </div>
   </div>
   <span itemprop="articleBody">
-    <p>It's great.</p>
-<p>I had some smaller problems with implementing the toolbar being overlapped by the posts, so I went with a header area like the old one. Also, the sidebar has been replaced by a menu button.</p>
-<p>I still need to rework some of the on-hover effects as the cursor is the &ldquo;digital hand&rdquo;, which means you should be able to pick up or focus on the material with the &ldquo;digital hand&rdquo; by hovering and write to it with the &ldquo;ink&rdquo; by clicking. Latter is specified by the Material guidelines, but not the focus.</p>
+    <p><em>WARNING: This post isn't meant as real advice to port Android L to unsupported device. It's just a quick summary of what I had to deal with.</em></p>
+<p>Owning an out-of-date Android device may be a pain. Not just because of the hardware, but also because of the availability of software updates. Older devices with worse hardware sometimes tend to profit from newer releases that push performance, but may never obtain support for such due to various factors:</p>
+<ul>
+<li>chipset manufacturer no more maintaining SOC (processor)</li>
+<li>driver incompatibilities with newer system versions (f.e. GPU, camera)</li>
+<li>manufacturer wants to push new flagship product</li>
+<li>too less disk space available</li>
+</ul>
+<p>Sometimes, communities such as XDA, CyanogenMod or MoDaCo still push these devices to their limits, most visible with the HTC HD2. But what if nobody cares about your device? What if they tell you to compile the kernel by yourself, but your PC is too weak? What if they tell you to get yourself a custom recovery, but you've got no idea how to? Or what if there once was a way to automatically create such one, but now is no more usable (<a href="http://builder.clockworkmod.com/">ClockworkMod Recovery Builder</a>)?</p>
+<p>Then you're left on your own.
+<br  />In such a case, you may want to operate step-by-step, summarized into three segments:</p>
+<ol>
+<li>root your device</li>
+<li>patch the stock recovery</li>
+<li>port a ROM to your device</li>
+</ol>
+<p>Sounds too easy? Actually, rooting your device can be acomplished by using one of the many one-click rooting utilities and patching the stock recovery isn't <em>that</em> hard once you have got the tools. The worst part of all is the last one: Porting the ROM.</p>
+<p>Going into detail, rooting the device even can be accomplished in case your device lacks an auto-rooting tool by just having the boot.img (from a previous OTA or dump) and patching the stock recovery requires the same knowledge as modifying a boot.img.</p>
+<p>The boot.img consists of two main parts: The kernel, being Linux, and the ramdisk, containing the first few files loaded when you boot your device, even before the system partition gets loaded. You actually only need to modify the ramdisk.</p>
+<p>To root the device, you need to enable adb debugging on boot and disable all security measures on the phone, such as setting SELinux to permissive and enabling the 'adb root' command to push the su binary to a remounted system partition.</p>
+<p>To patch the stock recovery, just take a recovery of a similar device and copy most of the files from the resource and binary folders over.</p>
+<p>If that wasn't easy enough, let's take a look at porting the ROM. Some of the important parts that are going to be ported are:</p>
+<ul>
+<li>BOOTCLASSPATH in init.rc (or in newer versions, init.environ.rc)</li>
+<li>services in init.*.rc files</li>
+<li>apps</li>
+<li>frameworks</li>
+<li>system and app libraries and binaries</li>
+<li>&ldquo;other files&rdquo;</li>
+</ul>
+<p>Stuff left as-is:</p>
+<ul>
+<li>kernel</li>
+<li>hardware libraries</li>
+<li>mount points (except you're feeling lucky)</li>
+<li>&ldquo;other files&rdquo;</li>
+</ul>
+<p>Most of the time, you need <strong>luck</strong> or <strong>a lot of knowledge</strong>. Without any of the both, you are going to fail quickly, even more in case you've got an Adreno 200 GPU. Trust me, supporting it's legacy drivers is painful, hacky and nowhere stable and safe, except you're porting a custom ROM with pre-baked hacks in it.</p>
+<p>Going to port a pure AOSP ROM, especially Android 5.0 L or higher? Have fun with missing symbols, ART, storage usage, apps killing themselves due to missing permissions, hacky GPU drivers, lag, shutting down via ADB (or pulling out the battery), no sound, no camera, no WIFI, no cellular data, no SD card access and <em>many, many failures</em> while fixing all that!</p>
+<p>But hey, you'll at least get some battery life and an excuse as of why you are offline. <em>And, you'll be cool, because</em> <strong>ANDROID L!</strong></p>
+<p>Your best friends are going to be adb shell and logcat, recovery mode, fastboot, your USB cable and your battery. Your kitchen will consist of a plain simple bootimage spliter and bootimage repacker. If that's not enough, you need to have some disk space free for two or three ROMs and Linux.</p>
+<p>Oh, right. Linux. It'll be profitable to boot into Linux as proper file permissions ('chmod 6777' and 'chown 0.0') and Linux-exclusive tools are needed for a proper workflow. Hopefully you won't need ODIN.</p>
+<p>Once you get the device stuck at your favourite manufacturer's logo, it's time to find out why. Most of the time it's either a dumb permission mistake, a missing file or (in the worst case) the graphics driver. After you've fought that and 50 reboots later, a nice boot animation may show up. In case not, try again.</p>
+<p>Then come the bootloops, or what you think they are. Patience may be profitable, especially when porting any ROM with an Android version higher than 5.0 (L). Logcat may show you in case something goes wrong, and if it goes, it also says what.</p>
+<p>After finally getting past the boot animation ('adb shell stop bootanim' doesn't count), Android may ask you what language you prefer -it should kill your soul-&hellip; hopefully. If it doesn't, don't worry, it's just the network manager. Luckily, there's just the right library you stumbled upon when pushing stuff to your device but forgot to. Or, it's the storage manager blaming about missing folders. In the latter case, set your device's external storage to emulated in the init.rc for the meantime. After doing it, you should be greeted by a half-booted Android with many, <em>many</em> force-closes.</p>
+<p>Fighting the force-closes isn't that hard. Just do</p>
+<pre><code>    adb root
+    adb shell chmod -R 777 /data/dalvik-cache/arm
+</code></pre>
+<p>&hellip; and the problem is going to be solved. It's just that the apps are trying to delete their own dalvik cache but can't as the folder permissions deny it.</p>
+<p>After all that hard work, work is going to be even harder, but mostly splits from the default way of porting: Porting the hardware libraries and hardware dependant binaries.</p>
+<ul>
+<li>WIFI (wpa_supplicant, firmware)</li>
+<li>cellular data (ril)</li>
+<li>audio (audio and media policies)</li>
+<li>sensors (sensors.hwmodelhere.so)</li>
+<li>camera (in case you've got a really outdated device, good luck with that one!)</li>
+<li>hardware keys (keylayout)</li>
+</ul>
+<p>A small tip from me: Don't give up. Take breaks, but never give up. Sometimes, even months after your initial trial, you're going to face problems with more knowledge and maybe going to fix the problems more easily than before.</p>
   </span>
   <!-- jsonblog.post.more -->
   <div class="postFooter">
@@ -94,11 +148,17 @@
   </script>
   <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
 </div>
-  <paper-shadow z="1"></paper-shadow>
 </div>
-        </section>
+            
+          </section>
+        </div>
       </div>
-    </core-header-panel>
+      <div class="footer">
+        <div class="button" style="background-color: rgba(255, 255, 255, 0); color: #fff;">AngelDE98 2014</div>
+      </div>
+      <div class="dark">
+      </div>
+    </div>
     
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
