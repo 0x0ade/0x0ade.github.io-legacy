@@ -768,9 +768,6 @@ dt {
   -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
 }
-.appicon:hover ~ .menu, .menuicon:hover ~ .menu, .menu:hover {
-  left: 0;
-}
 .menu img {
   transition-duration: 0.3s;
   transition-property: transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
@@ -843,9 +840,6 @@ dt {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
-}
-.appicon:hover ~ .dark, .menuicon:hover ~ .dark, .menu:hover ~ .dark {
-  background-color: rgba(0, 0, 0, 0.6);
 }
 .header {
   color: rgba(255, 255, 255, 0.87);
