@@ -852,7 +852,7 @@ dt {
   font-family: 'Roboto Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-align: left;
-  background-color: #03a9f4;
+  background-color: rgba(3, 169, 244, 1);
   background-image: url("/images/background.jpg");
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -971,26 +971,6 @@ dt {
   .main {
     background-image: url("");
   }
-  .main {
-    background-image: url("");
-    margin: 0 0 52px 0;
-    padding: 0 0 16px 0;
-  }
-  .headerimg {
-    padding-top: 56.25%;
-    display: block;
-    width: 100%;
-    background-color: #03a9f4;
-    background-image: url("/images/background.jpg");
-    background-attachment: fixed !important;
-    background-size: 100% !important;
-    background-position: top !important;
-    background-repeat: no-repeat;
-  }
-  .content {
-    margin: -32px auto 16px auto;
-    padding: 0 0 16px 0;
-  }
   .appicon {
     display: block;
     position: fixed;
@@ -1041,25 +1021,33 @@ dt {
     padding: 4px 4px 4px 4px;
   }
   
-  .header, .footer {
-    transition-duration: 0.5s;
-    transition-property: -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
-    transition-timing-function: ease-in-out;
-    -moz-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
-    -o-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
+  .header {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   }
-  .header:hover, .footer:hover {
-    -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-    -o-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  
+  .headerimg {
+    padding-top: 56.25%;
+    display: block;
+    width: 100%;
+    margin: 33px 0 -33px 0;
+    background-color: #03a9f4;
+    background-image: url("/images/background.jpg");
+    background-size: 100% !important;
+    background-position: top !important;
+    background-repeat: no-repeat;
+  }
+  
+  .main {
+    background-image: url("");
+    margin: 32px 0 0 0;
+    padding: 16px 0 0 0;
   }
 
   .content {
+    margin: -64px auto 0 auto;
     padding: 0 20px 20px 20px;
   }
+  
   .floatlink {
     position: fixed;
     top: 100%;
