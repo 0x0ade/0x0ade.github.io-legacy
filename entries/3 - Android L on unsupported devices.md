@@ -55,7 +55,7 @@ Once you get the device stuck at your favourite manufacturer's logo, it's time t
 
 Then come the bootloops, or what you think they are. Patience may be profitable, especially when porting any ROM with an Android version higher than 5.0 (L). Logcat may show you in case something goes wrong, and if it goes, it also says what.
 
-After finally getting past the boot animation ('adb shell stop bootanim' doesn't count), Android may ask you what language you prefer -it should kill your soul-... hopefully. If it doesn't, don't worry, it's just the network manager. Luckily, there's just the right library you stumbled upon when pushing stuff to your device but forgot to. Or, it's the storage manager blaming about missing folders. In the latter case, set your device's external storage to emulated in the init.rc for the meantime. After doing it, you should be greeted by a half-booted Android with many, *many* force-closes. 
+After finally getting past the boot animation ('adb shell stop bootanim' doesn't count), Android may ask you what language you prefer ~~it to kill your soul with~~... hopefully. If it doesn't, don't worry, it's just the network manager. Luckily, there's just the right library you stumbled upon when pushing stuff to your device but forgot to. Or, it's the storage manager blaming about missing folders. In the latter case, set your device's external storage to emulated in the init.rc for the meantime. After doing it, you should be greeted by a half-booted Android with many, *many* force-closes. 
 
 Fighting the force-closes isn't that hard. Just do
         adb root
