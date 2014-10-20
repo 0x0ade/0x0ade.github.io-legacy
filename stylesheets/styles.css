@@ -714,24 +714,6 @@ dt {
   box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.2), 0px 3px 12px rgba(0, 0, 0, 0.6);
 }
 
-.appicon {
-  transition-duration: 0.3s;
-  transition-property: top;
-  transition-timing-function: ease-in-out;
-  z-index: 97;
-  display: none;
-  width: 64px;
-  height: 64px;
-  position: fixed;
-  top: 24px;
-  left: 16px;
-  margin: 8px 8px 8px 0;
-  color: #fafafa;
-  border-radius: 32px;
-}
-.appicon:hover {
-  top: 20px;
-}
 .menuicon {
   transition-duration: 0.3s;
   transition-property: top;
@@ -977,27 +959,15 @@ dt {
   .main {
     background-image: url("");
   }
-  .appicon {
-    display: block;
-    position: fixed;
-    width: 48px;
-    height: 48px;
-    top: 0px;
-    left: 4px;
-    margin: 0 4px 4px 0;
-  }
-  .appicon:hover {
-    top: -2px;
-  }
   .menuicon {
     display: block;
     position: fixed;
-    top: 9px;
-    left: -12px;
-    margin: 4px 4px 4px 0;
+    top: 12px;
+    left: 16px;
+    margin: 0 4px 4px 0;
   }
   .menuicon:hover {
-    top: 7px;
+    top: 10px;
   }
   .header {
     background-image: url("");
