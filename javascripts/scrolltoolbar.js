@@ -10,25 +10,27 @@ $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
     var scroll = scrollTop - previousTop;
     
-    $(".header").css("top", -scrollTop / 4);
-    $(".footer").css("bottom", -($(document).height() - ($(this).scrollTop() + $(this).height())) / 4);
+    $(".header").css("top", -scrollTop / 2);
+    $(".footer").css("bottom", -($(document).height() - ($(this).scrollTop() + $(this).height())) / 2);
     
     if (scroll > 0) {
-      $("#toolbar").css("top", Math.max(parseInt($("#toolbar").css("top")), scrollTop-134 - $("#toolbar").outerHeight(true) - 16));
+      $("#toolbar").css("top", Math.max(parseInt($("#toolbar").css("top")), scrollTop-192 - $("#toolbar").outerHeight(true) - 16));
     }
     if (scroll < 0) {
-      $("#toolbar").css("top", Math.max(0, Math.min(parseInt($("#toolbar").css("top")), scrollTop-134)));
+      $("#toolbar").css("top", Math.max(0, Math.min(parseInt($("#toolbar").css("top")), scrollTop-192)));
     }
     
-    if (scrollTop > 134) {
-      if (parseInt($(".floatlink").css("top")) > scrollTop-134 + $(this).height()) {
+    if (scrollTop > 1) {
+      if (parseInt($(".floatlink").css("top")) > scrollTop-200 + $(this).height()) {
         $(".floatlink").css("transition-property", "transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow");
+      } else if (scrollTop > 300) {
+        $(".floatlink").css("transition-property", "-moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow");
       }
       $(".floatlink").css("top", scrollTop-100 + $(this).height());
       $(".floatlink").css("margin", "0 16px 4px 682px");
     } else {
       $(".floatlink").css("transition-property", "transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow, top, margin");
-      $(".floatlink").css("top", "134px");
+      $(".floatlink").css("top", "208px");
       $(".floatlink").css("margin", "4px 0 0 682px");
     }
     previousTop = scrollTop;
