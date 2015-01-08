@@ -1,5 +1,25 @@
 var previousTop = $(window).scrollTop();
+var animating = 0;
 $(window).scroll(function() {
+    
+    $(".post").each(function() {
+      if ($(this).css("opacity") != "0") {
+        return;
+      }
+      if ($(this).visible(true)) {
+        $(this).css("opacity", "0.25");
+        $(this).css("marginLeft", "160vh");
+        $(this).css("marginRight", "-160vh");
+        $(this).delay(50*animating).animate({
+          marginLeft: 0,
+          marginRight: 0,
+          opacity: 1,
+          complete: function() {animating--;}
+        }, 500);
+        animating++;
+      }
+    });
+    
     if ($(this).width() < 820) {
       $(".headerimg").css("margin", ($(this).scrollTop() * 0.75 - 33)+"px 0 "+(-($(this).scrollTop() * 0.75) - 33)+"px 0");
       $(".header").css("background-color", "rgba(3, 169, 244, "+($(this).scrollTop() / $(".headerimg").outerHeight(true))+")");

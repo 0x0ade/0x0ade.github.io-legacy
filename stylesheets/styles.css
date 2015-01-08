@@ -884,6 +884,7 @@ dt {
   height: 24px;
 }
 .post, .hover {
+  opacity: 0;
   transition-duration: 0.3s;
   transition-property: opacity, transform, -moz-box-shadow, -webkit-box-shadow, -o-box-shadow, box-shadow;
   transition-timing-function: ease-in-out;
