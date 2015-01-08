@@ -7,12 +7,12 @@ $(window).scroll(function() {
         return;
       }
       if ($(this).visible(true)) {
-        $(this).css("opacity", "0.25");
-        $(this).css("marginLeft", "160vh");
-        $(this).css("marginRight", "-160vh");
+        $(this).css("opacity", "0.01");
+        $(this).css("marginTop", $(window).height()*0.6);
+        $(this).css("marginBottom", 30-$(window).height()*0.6);
         $(this).delay(50*animating).animate({
-          marginLeft: 0,
-          marginRight: 0,
+          marginTop: 30,
+          marginBottom: 0,
           opacity: 1,
           complete: function() {animating--;}
         }, 500);
