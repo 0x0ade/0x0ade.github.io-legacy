@@ -3,100 +3,154 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>AngelDE98's Website</title>
+    <title>0x0ade's Website</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="icon" sizes="192x192" href="/favicon-192.png">
     <link rel="icon" sizes="544x544"  href="/favicon-hd.png">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="/javascripts/jquery.visible.min.js"></script>
-    <script src="/javascripts/respond.js"></script>
-    <script src="/javascripts/scrolltoolbar.js" async defer></script>
-    <script src="/javascripts/imagefocus.js" async defer></script>
-    <script src="/javascripts/menubutton.js" async defer></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://platform.twitter.com/widgets.js" async defer></script>
-    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0" async defer></script>
-    <script src="http://www.google.com/cse/cse.js?cx=005453329356042368377:l1eqyxm6l68" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/materialize-ext.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/main.js" async defer></script>
+    
+    <!--TODO: make only load on full posts-->
+    <script src="https://angelde98.disqus.com/embed.js" async defer></script>
+    
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="https://cse.google.com/cse.js?cx=005453329356042368377:l1eqyxm6l68"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="/stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#03a9f4">
+    <meta name="theme-color" content="#0080FF">
 
-    <meta property="og:image" content="http://angelde98.github.com/favicon-hd.png">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://angelde98.github.com/feed.rss" />
-    <meta name="description" content="AngelDE98's blog posts, games and HTML / CSS testbed.">
-    <meta name="keywords" content="AngelDE98, Website, Homepage, Blog, Game, Developer, Java">
-    <meta name="author" content="Maik AngelDE98 Macho">
+    <meta property="og:image" content="https://angelde98.github.com/favicon-hd.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://angelde98.github.com/feed.rss" />
+    <meta name="description" content="0x0ade's blog posts, games and HTML / CSS testbed.">
+    <meta name="keywords" content="AngelDE98, 0x0ade, Website, Homepage, Blog, Game, Developer">
+    <meta name="author" content="Maik 0x0ade Macho">
   </head>
-  <body unresolved>
-    <div itemscope itemtype="http://schema.org/Blog">
-      <img src="/images/icon-menu.png" alt="menu icon" class="menuicon">
-      <div class="menu">
-        <img src="/images/background.jpg" alt="sidebar image">
-        <a href="/" class="button"><img src="/images/icon-angelde98.png" alt="Home">Home</a>
-        <a href="http://fourbytes-team.github.io" class="button"><img src="/images/icon-fourbytes.png" alt="Fourbytes">Fourbytes</a>
-        <a href="http://github.com/AngelDE98" class="button"><img src="/images/icon-github.png" alt="AngelDE98 @ GitHub">AngelDE98 @ GitHub</a>
-        <a href="http://twitter.com/AngelDE98" class="button"><img src="/images/icon-twitter.png" alt="AngelDE98 @ Twitter">AngelDE98 @ Twitter</a>
+  <body>
+    <div itemscope itemtype="https://schema.org/Blog">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold"><a href="/">Home</a></li>
+        
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal">0x0ade @</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="https://twitter.com/0x0ade">Twitter</a></li>
+                  <li><a href="https://github.com/AngelDE98">GitHub</a></li>
+                  <li><a href="https://codepen.io/AngelDE98/">CodePen</a></li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal">Categories</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><p>This is a dead section.</p></li>
+                  <li><p>I didn't implement sorting by category yet...</p></li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal">Archives</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><p>This is a dead section.</p></li>
+                  <li><p>I didn't implement sorting by time yet...</p></li>
+                </ul>
+              </div>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+      
+      <header>
+        <nav class="merged">
+          <div class="nav-wrapper">
+            <a class="brand-logo center">0x0ade</a>
+            <a data-activates="slide-out" class="button-collapse show-on-large left"><i class="mdi-navigation-menu"></i></a>
+            <div id="search-form" class="right">
+              <!--will be replaced-->
+              <form class="search-wrapper input-field" onSubmit="return false;">
+                <input value="005453329356042368377:l1eqyxm6l68" name="cx" type="hidden">
+                <input value="FORID:11" name="cof" type="hidden">
+                <input id="q" type="search" class="gsc-input" name="q" spellcheck="false">
+                <label for="q"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <div id="search-results">
       </div>
-      <div class="header">
-        <h1 itemprop="name">AngelDE98's Website</h1>
-        <p itemprop="description">AngelDE98's blog posts, games and HTML / CSS testbed.</p>
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+      <div id="header">
+        <div id="headertext">
+          <h1 itemprop="name">0x0ade's Website</h1>
+          <p itemprop="description">0x0ade's blog posts, games and HTML / CSS testbed.</p>
+        </div>
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Maik Macho">
-          <meta itemprop="alternateName" content="AngelDE98">
+          <meta itemprop="alternateName" content="0x0ade">
         </span>
       </div>
-      <div class="headerimg">
-      </div>
-      <div class="main">
-        <div class="content">
-          <section>
-            <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS icon"></a>
-            <div id="toolbar">
-              <gcse:search></gcse:search>
-            </div>
-            
-            <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="postHeader">
-    <h2><a href="/posts/4.html" itemprop="name">Screenshots of Android L on Phicomm FWS710 Pro</a></h2>
+      
+      <main>
+        <div id="posts">
+          <div class="card post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <div class="card-content">
+    <a href="/posts/2.html"><span class="card-title grey-text text-darken-4" class="title" itemprop="name">Screenshots of Android L on Phicomm FWS710 Pro</span></a>
     <meta itemprop="description" content="Some screenshots of Android L running on unsupported hardware.">
-    <p>#4</p>
-    <div class="postShare">
-      <div class="g-plus" data-action="share" data-href="/posts/4.html" data-annotation="bubble"></div>
-      <div class="fb-share-button" data-href="http://angelde98.github.io/posts/4.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/4.html" data-text="Screenshots of Android L on Phicomm FWS710 Pro on @AngelDE98's Website: " data-dnt="true">Tweet</a>
-    </div>
+    
+    <span itemprop="articleBody" class="force-collection">
+      <p><img style="width: 25%; height: 25%;" src=" /entries/images/2/screen0.png" data-caption="home screen"><img style="width: 25%; height: 25%;" src=" /entries/images/2/screen1.png" data-caption="app drawer"><img style="width: 25%; height: 25%;" src=" /entries/images/2/screen3.png" data-caption="about screen"><img style="width: 100%; height: 100%;" src=" /entries/images/2/screen2.png" data-caption="outdated Shadow Engine running on ART"></p>
+    </span>
   </div>
-  <span itemprop="articleBody">
-    <p><img style="width: 25%; height: 25%;" src=" /entries/images/4/screen0.png" alt="home screen"><img style="width: 25%; height: 25%;" src=" /entries/images/4/screen1.png" alt="app drawer"><img style="width: 25%; height: 25%;" src=" /entries/images/4/screen3.png" alt="about screen">
-<br  /><img style="width: 100%; height: 100%;" src=" /entries/images/4/screen2.png" alt="outdated Shadow Engine running on ART"></p>
-  </span>
-  <!-- jsonblog.post.more -->
-  <!-- jsonblog.post.comments -->
-</div><div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="postHeader">
-    <h2><a href="/posts/3.html" itemprop="name">Android L on unsupported devices</a></h2>
+  
+  <div class="card-action">
+    <!-- jsonblog.post.more -->
+    <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
+    <a class="btn-share btn-flat teal-text text-darken-2 btn-flat waves-effect">Share</a>
+    <div class="share-legacy" style="display: none;">
+      <div class="g-plus" data-action="share" data-href="/posts/2.html" data-annotation="bubble"></div>
+    </div>
+    <!-- jsonblog.post.comments -->
+  </div>
+  
+  <div class="card-footer">
+    <span class="id chip">#2</span>
+    <span class="category chip">android hacks</span>
+    <span class="date chip">before the update</span>
+  </div>
+</div><div class="card post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <div class="card-content">
+    <a href="/posts/1.html"><span class="card-title grey-text text-darken-4" class="title" itemprop="name">Android L on unsupported devices</span></a>
     <meta itemprop="description" content="The pain of getting unsupported software updates to run.">
-    <p>#3</p>
-    <div class="postShare">
-      <div class="g-plus" data-action="share" data-href="/posts/3.html" data-annotation="bubble"></div>
-      <div class="fb-share-button" data-href="http://angelde98.github.io/posts/3.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/3.html" data-text="Android L on unsupported devices on @AngelDE98's Website: " data-dnt="true">Tweet</a>
-    </div>
-  </div>
-  <span itemprop="articleBody">
-    <p><em>WARNING: This post isn't meant as real advice to port Android L to unsupported device. It's just a quick summary of what I had to deal with.</em></p>
+    
+    <span itemprop="articleBody" class="force-collection">
+      <p><em>WARNING: This post isn't meant as real advice to port Android L to unsupported devices. It's just a quick summary of what I had to deal with.</em></p>
 <p>Owning an out-of-date Android device may be a pain. Not just because of the hardware, but also because of the availability of software updates. Older devices with worse hardware sometimes tend to profit from newer releases that push performance, but may never obtain support for such due to various factors:</p>
 <ul>
 <li>chipset manufacturer no more maintaining SOC (processor)</li>
@@ -106,70 +160,56 @@
 </ul>
 <p>Sometimes, communities such as XDA, CyanogenMod or MoDaCo still push these devices to their limits, most visible with the HTC HD2. But what if nobody cares about your device? What if they tell you to compile the kernel by yourself, but your PC is too weak? What if they tell you to get yourself a custom recovery, but you've got no idea how to? Or what if there once was a way to automatically create such one, but now is no more usable (<a href="http://builder.clockworkmod.com/">ClockworkMod Recovery Builder</a>)?</p>
 <p>Then you're left on your own.</p>
-  </span>
-  <a href="/posts/3.html" class="more">
-  <!-- img src="/images/pixel.png" alt="" -->
-  <p>MORE</p>
-  <paper-ripple></paper-ripple>
-</a>
-  <!-- jsonblog.post.comments -->
-</div><div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="postHeader">
-    <h2><a href="/posts/2.html" itemprop="name">Looking up to Polymer</a></h2>
-    <meta itemprop="description" content="Just found Polymer again and fell in love with it AGAIN.">
-    <p>#2</p>
-    <div class="postShare">
-      <div class="g-plus" data-action="share" data-href="/posts/2.html" data-annotation="bubble"></div>
-      <div class="fb-share-button" data-href="http://angelde98.github.io/posts/2.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/2.html" data-text="Looking up to Polymer on @AngelDE98's Website: " data-dnt="true">Tweet</a>
-    </div>
+    </span>
   </div>
-  <span itemprop="articleBody">
-    <p>Back in Juny, when Google I/O 2014 happened, I was fascinated by the idea of a simple, minimalistic design, made out of some kind of material. Well, it's the Material design guidelines. But Google didn't just show off Android L and Material, but also some kind of theme, design, for the web - Material for the web. Unfortunately since then, I forgot the name of the project, until&hellip;</p>
-<h3>Polymer.</h3>
-  </span>
-  <a href="/posts/2.html" class="more">
-  <!-- img src="/images/pixel.png" alt="" -->
-  <p>MORE</p>
-  <paper-ripple></paper-ripple>
-</a>
-  <!-- jsonblog.post.comments -->
-</div><div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="postHeader">
-    <h2><a href="/posts/1.html" itemprop="name">Hello, World!</a></h2>
-    <meta itemprop="description" content="TL;DR: Introduction into my new website.">
-    <p>#1</p>
-    <div class="postShare">
+  
+  <div class="card-action">
+    <a href="/posts/1.html" class="more teal-text text-darken-2 btn-flat waves-effect">More</a>
+    <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
+    <a class="btn-share btn-flat teal-text text-darken-2 btn-flat waves-effect">Share</a>
+    <div class="share-legacy" style="display: none;">
       <div class="g-plus" data-action="share" data-href="/posts/1.html" data-annotation="bubble"></div>
-      <div class="fb-share-button" data-href="http://angelde98.github.io/posts/1.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/1.html" data-text="Hello, World! on @AngelDE98's Website: " data-dnt="true">Tweet</a>
     </div>
+    <!-- jsonblog.post.comments -->
   </div>
-  <span itemprop="articleBody">
-    <p>Hello, World! My name is Maik Macho, but you may find me in the internet as AngelDE98. What you are seeing here is my new - actually my first - website. Don't expect much to find here.</p>
-<p>I guess I won't post much here, except it's not fitting anywhere else and / or it's some longer text or it's the release of any noteworthy software I've created. In case you want to be informed anyway, there's the RSS feed button. If you really want to follow me, Twitter is the best method.</p>
-  </span>
-  <a href="/posts/1.html" class="more">
-  <!-- img src="/images/pixel.png" alt="" -->
-  <p>MORE</p>
-  <paper-ripple></paper-ripple>
-</a>
-  <!-- jsonblog.post.comments -->
+  
+  <div class="card-footer">
+    <span class="id chip">#1</span>
+    <span class="category chip">android hacks</span>
+    <span class="date chip">before the update</span>
+  </div>
 </div>
-            
-          </section>
+        </div>
+      </main>
+      
+      <div id="share" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Share using...</h4>
+          <ul class="collection">
+            <li class="collection-item avatar waves-effect waves-block" id="share-link">
+              <i class="material-icons circle">link</i>
+              <span class="title">Link</span>
+              <p class="link"></p>
+            </li>
+            <li class="collection-item avatar waves-effect waves-blue waves-block" id="share-facebook">
+              <img src="/images/facebook.png" alt="" class="circle">
+              <span class="title">Facebook</span>
+              <p>Share the post with your friends on Facebook.</p>
+            </li>
+            <li class="collection-item avatar waves-effect waves-teal waves-block" id="share-twitter">
+              <img src="/images/twitter.png" alt="" class="circle">
+              <span class="title">Twitter</span>
+              <p>Tweet about the post and link to it via Twitter.</p>
+            </li>
+            <li class="collection-item avatar waves-effect waves-red waves-block" id="share-gplus">
+              <img src="/images/gplus.png" alt="" class="circle">
+              <span class="title">Google+</span>
+              <p>Well... &lt;insert joke about Google+ here&gt;.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer">
-        <div class="button">AngelDE98 2014</div>
-      </div>
-      <div class="dark">
-      </div>
-      <div class="hover">
-      </div>
+      
     </div>
-    
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>

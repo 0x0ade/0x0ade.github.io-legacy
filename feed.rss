@@ -2,39 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="http://angelde98.github.io/feed.rss" rel="self" type="application/rss+xml" />
-    <title>AngelDE98's Website</title>
+    <title>0x0ade's Website</title>
     <link>http://angelde98.github.io</link>
-    <description>AngelDE98's blog posts, games and HTML / CSS testbed.</description>
+    <description>0x0ade's blog posts, games and HTML / CSS testbed.</description>
     <language>en-US</language>
     <copyright>Maik AngelDE98 Macho</copyright>
     
     <image>
       <url>http://angelde98.github.com/favicon.png</url>
-      <title>AngelDE98's Website</title>
+      <title>0x0ade's Website</title>
       <link>http://angelde98.github.io</link>
     </image>
     
     <item>
   <title>Screenshots of Android L on Phicomm FWS710 Pro</title>
   <description>Some screenshots of Android L running on unsupported hardware.</description>
-  <link>http://angelde98.github.io/posts/4.html</link>
-  <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
-  <guid>http://angelde98.github.io/posts/4.html</guid>
-</item><item>
-  <title>Android L on unsupported devices</title>
-  <description>The pain of getting unsupported software updates to run.</description>
-  <link>http://angelde98.github.io/posts/3.html</link>
-  <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
-  <guid>http://angelde98.github.io/posts/3.html</guid>
-</item><item>
-  <title>Looking up to Polymer</title>
-  <description>Just found Polymer again and fell in love with it AGAIN.</description>
   <link>http://angelde98.github.io/posts/2.html</link>
   <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
   <guid>http://angelde98.github.io/posts/2.html</guid>
 </item><item>
-  <title>Hello, World!</title>
-  <description>TL;DR: Introduction into my new website.</description>
+  <title>Android L on unsupported devices</title>
+  <description>The pain of getting unsupported software updates to run.</description>
   <link>http://angelde98.github.io/posts/1.html</link>
   <author>nuda1998@gmail.com (Maik AngelDE98 Macho)</author>
   <guid>http://angelde98.github.io/posts/1.html</guid>

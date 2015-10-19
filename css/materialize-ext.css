@@ -1,0 +1,69 @@
+/*apply collection to ul / ol / li*/
+.force-collection ul, .force-collection ol {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative; }
+  .force-collection ul li, .force-collection ol li {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0; }
+    .force-collection ul li.avatar, .force-collection ol li.avatar {
+      min-height: 84px;
+      padding-left: 72px;
+      position: relative; }
+      .force-collection ul li.avatar .circle, .force-collection ol li.avatar .circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle; }
+      .force-collection ul li.avatar i.circle, .force-collection ol li.avatar i.circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center; }
+      .force-collection ul li.avatar .title, .force-collection ol li.avatar .title {
+        font-size: 16px; }
+      .force-collection ul li.avatar p, .force-collection ol li.avatar p {
+        margin: 0; }
+      .force-collection ul li.avatar .secondary-content, .force-collection ol li.avatar .secondary-content {
+        position: absolute;
+        top: 16px;
+        right: 16px; }
+    .force-collection ul li:last-child, .force-collection ol li:last-child {
+      border-bottom: none; }
+    .force-collection ul li.active, .force-collection ol li.active {
+      background-color: #26a69a;
+      color: #eafaf9; }
+      .force-collection ul li.active .secondary-content, .force-collection ol li.active .secondary-content {
+        color: #fff; }
+  .force-collection ul ali, .force-collection ol ali {
+    display: block;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    transition: 0.25s;
+    color: #26a69a; }
+    .force-collection ul ali:not(.active):hover, .force-collection ol ali:not(.active):hover {
+      background-color: #ddd; }
+  .collection.with-header .collection-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px; }
+  .collection.with-header li {
+    padding-left: 30px; }
+  .collection.with-header li.avatar {
+    padding-left: 72px; }
+    
+/*add more waves colors*/
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(15, 47, 255, 0.65);
+}

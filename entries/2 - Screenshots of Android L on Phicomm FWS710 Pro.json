@@ -1,6 +1,8 @@
 {
   "post": {
-    "id": 4,
+    "id": 2,
+    "date": "before the update",
+    "category": "android hacks",
     "title": "Screenshots of Android L on Phicomm FWS710 Pro",
     "description": "Some screenshots of Android L running on unsupported hardware."
   }

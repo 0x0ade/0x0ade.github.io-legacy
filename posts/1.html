@@ -3,118 +3,237 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>AngelDE98's Website: Hello, World!</title>
+    <title>0x0ade's Website: Android L on unsupported devices</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="icon" sizes="192x192" href="/favicon-192.png">
     <link rel="icon" sizes="544x544"  href="/favicon-hd.png">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="/javascripts/jquery.visible.min.js"></script>
-    <script src="/javascripts/respond.js"></script>
-    <script src="/javascripts/scrolltoolbar.js" async defer></script>
-    <script src="/javascripts/imagefocus.js" async defer></script>
-    <script src="/javascripts/menubutton.js" async defer></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://platform.twitter.com/widgets.js" async defer></script>
-    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0" async defer></script>
-    <script src="http://www.google.com/cse/cse.js?cx=005453329356042368377:l1eqyxm6l68" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/materialize-ext.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/main.js" async defer></script>
+    
+    <!--TODO: make only load on full posts-->
+    <script src="https://angelde98.disqus.com/embed.js" async defer></script>
+    
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="https://cse.google.com/cse.js?cx=005453329356042368377:l1eqyxm6l68"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="/stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#03a9f4">
+    <meta name="theme-color" content="#0080FF">
 
-    <meta property="og:image" content="http://angelde98.github.com/favicon-hd.png">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://angelde98.github.com/feed.rss" />
-    <meta name="description" content="TL;DR: Introduction into my new website.">
-    <meta name="keywords" content="AngelDE98, Website, Homepage, Blog, Game, Developer, Java">
-    <meta name="author" content="Maik AngelDE98 Macho">
+    <meta property="og:image" content="https://angelde98.github.com/favicon-hd.png">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://angelde98.github.com/feed.rss" />
+    <meta name="description" content="The pain of getting unsupported software updates to run.">
+    <meta name="keywords" content="AngelDE98, 0x0ade, Website, Homepage, Blog, Game, Developer">
+    <meta name="author" content="Maik 0x0ade Macho">
   </head>
-  <body unresolved>
-    <div itemscope itemtype="http://schema.org/Blog">
-      <img src="/images/icon-menu.png" alt="menu icon" class="menuicon">
-      <div class="menu">
-        <img src="/images/background.jpg" alt="sidebar image">
-        <a href="/" class="button"><img src="/images/icon-angelde98.png" alt="Home">Home</a>
-        <a href="http://fourbytes-team.github.io" class="button"><img src="/images/icon-fourbytes.png" alt="Fourbytes">Fourbytes</a>
-        <a href="http://github.com/AngelDE98" class="button"><img src="/images/icon-github.png" alt="AngelDE98 @ GitHub">AngelDE98 @ GitHub</a>
-        <a href="http://twitter.com/AngelDE98" class="button"><img src="/images/icon-twitter.png" alt="AngelDE98 @ Twitter">AngelDE98 @ Twitter</a>
+  <body>
+    <div itemscope itemtype="https://schema.org/Blog">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold"><a href="/">Home</a></li>
+        
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal">0x0ade @</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="https://twitter.com/0x0ade">Twitter</a></li>
+                  <li><a href="https://github.com/AngelDE98">GitHub</a></li>
+                  <li><a href="https://codepen.io/AngelDE98/">CodePen</a></li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal">Categories</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><p>This is a dead section.</p></li>
+                  <li><p>I didn't implement sorting by category yet...</p></li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="bold">
+              <a class="collapsible-header waves-effect waves-teal">Archives</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><p>This is a dead section.</p></li>
+                  <li><p>I didn't implement sorting by time yet...</p></li>
+                </ul>
+              </div>
+            </li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+      
+      <header>
+        <nav class="merged">
+          <div class="nav-wrapper">
+            <a class="brand-logo center">0x0ade</a>
+            <a data-activates="slide-out" class="button-collapse show-on-large left"><i class="mdi-navigation-menu"></i></a>
+            <div id="search-form" class="right">
+              <!--will be replaced-->
+              <form class="search-wrapper input-field" onSubmit="return false;">
+                <input value="005453329356042368377:l1eqyxm6l68" name="cx" type="hidden">
+                <input value="FORID:11" name="cof" type="hidden">
+                <input id="q" type="search" class="gsc-input" name="q" spellcheck="false">
+                <label for="q"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <div id="search-results">
       </div>
-      <div class="header">
-        <h1 itemprop="name">AngelDE98's Website</h1>
-        <p itemprop="description">AngelDE98's blog posts, games and HTML / CSS testbed.</p>
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      
+      <div id="header">
+        <div id="headertext">
+          <h1 itemprop="name">0x0ade's Website</h1>
+          <p itemprop="description">0x0ade's blog posts, games and HTML / CSS testbed.</p>
+        </div>
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Maik Macho">
-          <meta itemprop="alternateName" content="AngelDE98">
+          <meta itemprop="alternateName" content="0x0ade">
         </span>
       </div>
-      <div class="headerimg">
-      </div>
-      <div class="main">
-        <div class="content">
-          <section>
-            <a href="http://angelde98.github.io/feed.rss" class="floatlink"><img src="/images/icon-rss-round.png" alt="RSS icon"></a>
-            <div id="toolbar">
-              <gcse:search></gcse:search>
-            </div>
-            
-            <div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="postHeader">
-    <h2><a href="/posts/1.html" itemprop="name">Hello, World!</a></h2>
-    <meta itemprop="description" content="TL;DR: Introduction into my new website.">
-    <p>#1</p>
-    <div class="postShare">
-      <div class="g-plus" data-action="share" data-href="/posts/1.html" data-annotation="bubble"></div>
-      <div class="fb-share-button" data-href="http://angelde98.github.io/posts/1.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/1.html" data-text="Hello, World! on @AngelDE98's Website: " data-dnt="true">Tweet</a>
-    </div>
-  </div>
-  <span itemprop="articleBody">
-    <p>Hello, World! My name is Maik Macho, but you may find me in the internet as AngelDE98. What you are seeing here is my new - actually my first - website. Don't expect much to find here.</p>
-<p>I guess I won't post much here, except it's not fitting anywhere else and / or it's some longer text or it's the release of any noteworthy software I've created. In case you want to be informed anyway, there's the RSS feed button. If you really want to follow me, Twitter is the best method.
-<br  />As you may have or have not noticed, this page is hosted on GitHub Pages but not using Jekyll. It was created using <a href="https://github.com/AngelDE98/jsonblog">JsonBlog</a>, a website building tool I wrote for this website and the upcoming <a href="http://fourbytes-team.github.io">Fourbytes Website</a>.</p>
-<p>The theme is based off Midnight by Matt Graham but heavily modified by me as I've tried to make it fit the Google Material design guidelines: A custom wallpaper, the Roboto font, a sidebar hidden by default and accessible with a menu button, cards, animations, and some more tweaks. It also is my first big theme modification, thus as such, it contains some CSS hacks for the PNG shadows and IE incompatibilities.</p>
-<p>Feel free to comment below in case you have got any suggestions for this blog / website.</p>
-  </span>
-  <!-- jsonblog.post.more -->
-  <div class="postFooter">
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = 'angelde98';
-      var disqus_identifier = '1';
       
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
+      <main>
+        <div id="posts">
+          <div class="card post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <div class="card-content">
+    <a href="/posts/1.html"><span class="card-title grey-text text-darken-4" class="title" itemprop="name">Android L on unsupported devices</span></a>
+    <meta itemprop="description" content="The pain of getting unsupported software updates to run.">
+    
+    <span itemprop="articleBody" class="force-collection">
+      <p><em>WARNING: This post isn't meant as real advice to port Android L to unsupported devices. It's just a quick summary of what I had to deal with.</em></p>
+<p>Owning an out-of-date Android device may be a pain. Not just because of the hardware, but also because of the availability of software updates. Older devices with worse hardware sometimes tend to profit from newer releases that push performance, but may never obtain support for such due to various factors:</p>
+<ul>
+<li>chipset manufacturer no more maintaining SOC (processor)</li>
+<li>driver incompatibilities with newer system versions (f.e. GPU, camera)</li>
+<li>manufacturer wants to push new flagship product</li>
+<li>too less disk space available</li>
+</ul>
+<p>Sometimes, communities such as XDA, CyanogenMod or MoDaCo still push these devices to their limits, most visible with the HTC HD2. But what if nobody cares about your device? What if they tell you to compile the kernel by yourself, but your PC is too weak? What if they tell you to get yourself a custom recovery, but you've got no idea how to? Or what if there once was a way to automatically create such one, but now is no more usable (<a href="http://builder.clockworkmod.com/">ClockworkMod Recovery Builder</a>)?</p>
+<p>Then you're left on your own.
+<br  />In such a case, you may want to operate step-by-step, summarized into three segments:</p>
+<ol>
+<li>root your device</li>
+<li>patch the stock recovery</li>
+<li>port a ROM to your device</li>
+</ol>
+<p>Sounds too easy? Actually, rooting your device can be acomplished by using one of the many one-click rooting utilities and patching the stock recovery isn't <em>that</em> hard once you have got the tools. The worst part of all is the last one: Porting the ROM.</p>
+<p>Going into detail, rooting the device even can be accomplished in case your device lacks an auto-rooting tool by just having the boot.img (from a previous OTA or dump) and patching the stock recovery requires the same knowledge as modifying a boot.img.</p>
+<p>The boot.img consists of two main parts: The kernel, being Linux, and the ramdisk, containing the first few files loaded when you boot your device, even before the system partition gets loaded. You actually only need to modify the ramdisk.</p>
+<p>To root the device, you need to enable adb debugging on boot and disable all security measures on the phone, such as setting SELinux to permissive and enabling the 'adb root' command to push the su binary to a remounted system partition.</p>
+<p>To patch the stock recovery, just take a recovery of a similar device and copy most of the files from the resource and binary folders over.</p>
+<p>If that wasn't easy enough, let's take a look at porting the ROM. Some of the important parts that are going to be ported are:</p>
+<ul>
+<li>BOOTCLASSPATH in init.rc (or in newer versions, init.environ.rc)</li>
+<li>services in init.*.rc files</li>
+<li>apps</li>
+<li>frameworks</li>
+<li>system and app libraries and binaries</li>
+<li>&ldquo;other files&rdquo;</li>
+</ul>
+<p>Stuff left as-is:</p>
+<ul>
+<li>kernel</li>
+<li>hardware libraries</li>
+<li>mount points (except you're feeling lucky)</li>
+<li>&ldquo;other files&rdquo;</li>
+</ul>
+<p>Most of the time, you need <strong>luck</strong> or <strong>a lot of knowledge</strong>. Without any of the both, you are going to fail quickly, even more in case you've got an Adreno 200 GPU. Trust me, supporting it's legacy drivers is painful, hacky and nowhere stable and safe, except you're porting a custom ROM with pre-baked hacks in it.</p>
+<p>Going to port a pure AOSP ROM, especially Android 5.0 L or higher? Have fun with missing symbols, ART, storage usage, apps killing themselves due to missing permissions, hacky GPU drivers, lag, shutting down via ADB (or pulling out the battery), no sound, no camera, no WIFI, no cellular data, no SD card access and <em>many, many failures</em> while fixing all that!</p>
+<p>But hey, you'll at least get some battery life and an excuse as of why you are offline. <em>And, you'll be cool, because</em> <strong>ANDROID L!</strong></p>
+<p>Your best friends are going to be adb shell and logcat, recovery mode, fastboot, your USB cable and your battery. Your kitchen will consist of a plain simple bootimage spliter and bootimage repacker. If that's not enough, you need to have some disk space free for two or three ROMs and Linux.</p>
+<p>Oh, right. Linux. It'll be profitable to boot into Linux as proper file permissions ('chmod 6777' and 'chown 0.0') and Linux-exclusive tools are needed for a proper workflow. Hopefully you won't need ODIN.</p>
+<p>Once you get the device stuck at your favourite manufacturer's logo, it's time to find out why. Most of the time it's either a dumb permission mistake, a missing file or (in the worst case) the graphics driver. After you've fought that and 50 reboots later, a nice boot animation may show up. In case not, try again.</p>
+<p>Then come the bootloops, or what you think they are. Patience may be profitable, especially when porting any ROM with an Android version higher than 5.0 (L). Logcat may show you in case something goes wrong, and if it goes, it also says what.</p>
+<p>After finally getting past the boot animation ('adb shell stop bootanim' doesn't count), Android may ask you what language you prefer <s>it to kill your soul with</s>&hellip; hopefully. If it doesn't, don't worry, it's just the network manager. Luckily, there's just the right library you stumbled upon when pushing stuff to your device but forgot to. Or, it's the storage manager blaming about missing folders. In the latter case, set your device's external storage to emulated in the init.rc for the meantime. After doing it, you should be greeted by a half-booted Android with many, <em>many</em> force-closes.</p>
+<p>Fighting the force-closes isn't that hard. Just do</p>
+<pre><code>    adb root
+    adb shell chmod -R 777 /data/dalvik-cache/arm
+</code></pre>
+<p>&hellip; and the problem is going to be solved. It's just that the apps are trying to delete their own dalvik cache but can't as the folder permissions deny it.</p>
+<p>After all that hard work, work is going to be even harder, but mostly splits from the default way of porting: Porting the hardware libraries and hardware dependant binaries.</p>
+<ul>
+<li>WIFI (wpa_supplicant, firmware)</li>
+<li>cellular data (ril)</li>
+<li>audio (audio and media policies)</li>
+<li>sensors (sensors.hwmodelhere.so)</li>
+<li>camera (in case you've got a really outdated device, good luck with that one!)</li>
+<li>hardware keys (keylayout)</li>
+</ul>
+<p>A small tip from me: Don't give up. Take breaks, but never give up. Sometimes, even months after your initial trial, you're going to face problems with more knowledge and maybe going to fix the problems more easily than before.</p>
+    </span>
+  </div>
+  
+  <div class="card-action">
+    <!-- jsonblog.post.more -->
+    <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
+    <a class="btn-share btn-flat teal-text text-darken-2 btn-flat waves-effect">Share</a>
+    <div class="share-legacy" style="display: none;">
+      <div class="g-plus" data-action="share" data-href="/posts/1.html" data-annotation="bubble"></div>
+    </div>
+    <div id="disqus_thread"></div>
+  </div>
+  
+  <div class="card-footer">
+    <span class="id chip">#1</span>
+    <span class="category chip">android hacks</span>
+    <span class="date chip">before the update</span>
+  </div>
 </div>
-</div>
-            
-          </section>
+        </div>
+      </main>
+      
+      <div id="share" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Share using...</h4>
+          <ul class="collection">
+            <li class="collection-item avatar waves-effect waves-block" id="share-link">
+              <i class="material-icons circle">link</i>
+              <span class="title">Link</span>
+              <p class="link"></p>
+            </li>
+            <li class="collection-item avatar waves-effect waves-blue waves-block" id="share-facebook">
+              <img src="/images/facebook.png" alt="" class="circle">
+              <span class="title">Facebook</span>
+              <p>Share the post with your friends on Facebook.</p>
+            </li>
+            <li class="collection-item avatar waves-effect waves-teal waves-block" id="share-twitter">
+              <img src="/images/twitter.png" alt="" class="circle">
+              <span class="title">Twitter</span>
+              <p>Tweet about the post and link to it via Twitter.</p>
+            </li>
+            <li class="collection-item avatar waves-effect waves-red waves-block" id="share-gplus">
+              <img src="/images/gplus.png" alt="" class="circle">
+              <span class="title">Google+</span>
+              <p>Well... &lt;insert joke about Google+ here&gt;.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer">
-        <div class="button">AngelDE98 2014</div>
-      </div>
-      <div class="dark">
-      </div>
-      <div class="hover">
-      </div>
+      
     </div>
-    
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>

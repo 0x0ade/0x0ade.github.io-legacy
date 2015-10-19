@@ -1,4 +1,4 @@
-*WARNING: This post isn't meant as real advice to port Android L to unsupported device. It's just a quick summary of what I had to deal with.*
+*WARNING: This post isn't meant as real advice to port Android L to unsupported devices. It's just a quick summary of what I had to deal with.*
 
 Owning an out-of-date Android device may be a pain. Not just because of the hardware, but also because of the availability of software updates. Older devices with worse hardware sometimes tend to profit from newer releases that push performance, but may never obtain support for such due to various factors:
 - chipset manufacturer no more maintaining SOC (processor)

@@ -1,17 +1,27 @@
-<div class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="postHeader">
-    <h2><a href="/posts/<!-- jsonblog.post.id -->.html" itemprop="name"><!-- jsonblog.post.title --></a></h2>
+<div class="card post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  
+  <div class="card-content">
+    <a href="/posts/<!-- jsonblog.post.id -->.html"><span class="card-title grey-text text-darken-4" class="title" itemprop="name"><!-- jsonblog.post.title --></span></a>
     <meta itemprop="description" content="<!-- jsonblog.post.description -->">
-    <p>#<!-- jsonblog.post.id --></p>
-    <div class="postShare">
-      <div class="g-plus" data-action="share" data-href="/posts/<!-- jsonblog.post.id -->.html" data-annotation="bubble"></div>
-      <div class="fb-share-button" data-href="http://angelde98.github.io/posts/<!-- jsonblog.post.id -->.html" data-layout="button_count"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://angelde98.github.io/posts/<!-- jsonblog.post.id -->.html" data-text="<!-- jsonblog.post.title --> on @AngelDE98's Website: " data-dnt="true">Tweet</a>
-    </div>
+    
+    <span itemprop="articleBody" class="force-collection">
+      <!-- jsonblog.post.content -->
+    </span>
   </div>
-  <span itemprop="articleBody">
-    <!-- jsonblog.post.content -->
-  </span>
-  <!-- jsonblog.post.more -->
-  <!-- jsonblog.post.comments -->
+  
+  <div class="card-action">
+    <!-- jsonblog.post.more -->
+    <noscript>Please enable JavaScript to view comments, the share buttons and other features.</noscript>
+    <a class="btn-share btn-flat teal-text text-darken-2 btn-flat waves-effect">Share</a>
+    <div class="share-legacy" style="display: none;">
+      <div class="g-plus" data-action="share" data-href="/posts/<!-- jsonblog.post.id -->.html" data-annotation="bubble"></div>
+    </div>
+    <!-- jsonblog.post.comments -->
+  </div>
+  
+  <div class="card-footer">
+    <span class="id chip">#<!-- jsonblog.post.id --></span>
+    <span class="category chip"><!-- jsonblog.post.category --></span>
+    <span class="date chip"><!-- jsonblog.post.date --></span>
+  </div>
 </div>
