@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US" class=" no-videoautoplay">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:image" content="https://downloadmorewam.com/wam.mp4" class="ng-scope">
+<meta name="twitter:card" content="player" class="ng-scope">
+<meta name="twitter:player" content="https://downloadmorewam.com/wam.mp4" class="ng-scope">
+<meta name="twitter:player:width" content="498" class="ng-scope">
+<meta name="twitter:player:height" content="498" class="ng-scope">
+<meta name="twitter:player:stream" content="https://downloadmorewam.com/wam.mp4" class="ng-scope">
+<meta name="twitter:player:stream:content_type" content="video/mp4" class="ng-scope">
+</head>
+<body>
+<h1>This is a test. Test it by sharing this link in Discord.</h1>
+</body>
+</html>
