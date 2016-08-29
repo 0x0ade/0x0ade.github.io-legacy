@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oembed>
+  <type>video</type>
+  <version>1.0</version>
+  <provider_name>0x0ade</provider_name>
+  <provider_url>https://0x0ade.github.io/</provider_url>
+  <cache_age>86400</cache_age>
+  <html>&lt;video autoplay&gt;&lt;source src&#61;&#34;https://downloadmorewam.com/wam.mp4&#61;1&#34; type&#61;&#34;video/mp4&#34;&gt;&lt;/video&gt;</html>
+  <width>600</width>
+  <height>400</height>
+  <title>distest</title>
+  <thumbnail_url>https://0x0ade.github.io/discordtest/test.png</thumbnail_url>
+  <thumbnail_width>220</thumbnail_width>
+  <thumbnail_height>220</thumbnail_height>
+</oembed>
